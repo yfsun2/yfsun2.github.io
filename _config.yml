@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: sunyafei的博客
+title: 孙亚飞的个人博客
 email: 2282763709@qq.com
 author: yfsun2
 
@@ -40,7 +40,7 @@ author: yfsun2
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "sunyafei的博客 (cleft) {currentYear} {author}"
+copyright: "孙亚飞的个人博客 (c) {currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
