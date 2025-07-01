@@ -73,7 +73,8 @@ yat:
 # sitemap: false
 
 # If you want to change site language, you can set lang option
-lang: "zh-CN"  # default lang is en
+lang: "zh"  # default lang is en
+languages: ["zh", "en", "de", "fr"]
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -86,7 +87,7 @@ translate_langs:
    img: https://cdn.countryflags.com/thumbs/france/flag-400.png
    text: French
 
- - lang: zh-CN
+ - lang: zh
    img: https://cdn.countryflags.com/thumbs/china/flag-400.png
    text: Chinese(Simple)
 
@@ -251,8 +252,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
-menu:
-  - title: "首页"
-    url: "/"
-  - title: "关于"
-    url: "/about/"
+  - jekyll-multiple-languages-plugin
+
+exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
