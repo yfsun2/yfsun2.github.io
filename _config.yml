@@ -74,7 +74,7 @@ yat:
 
 # If you want to change site language, you can set lang option
 lang: "zh"  # default lang is en
-languages: ["zh", "en", "de", "fr"]
+languages: ["zh", "en",]
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
