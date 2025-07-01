@@ -252,6 +252,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
-  - jekyll-multiple-languages-plugin
 
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
