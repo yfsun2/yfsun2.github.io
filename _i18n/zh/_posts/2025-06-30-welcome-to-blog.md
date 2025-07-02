@@ -4,6 +4,7 @@ title: 我的第一篇博客
 subtitle: 我的第一篇博客的副标题
 categories: [markdown]
 tags: [随笔]
+banner: "/assets/images/icon.png"
 ---
 
 ## 我的第一篇博客
