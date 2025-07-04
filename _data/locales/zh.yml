@@ -1,8 +1,8 @@
-sidebar:
+nav:
   home: "首页"
   about: "关于"
-  categories: "分类"
   archives: "归档"
+  categories: "分类"
   tags: "标签"
-  links: "链接"
-  subscribe: "订阅"
+  search: "搜索"
+  switch_language: "切换语言"

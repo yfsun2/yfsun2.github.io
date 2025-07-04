@@ -13,7 +13,7 @@
   <ul class="list-unstyled ct-language-dropdown">
     {% for item in translate_langs %}
       <li>
-        <a href="#" class="lang-select" data-lang="{{ item.lang }}">
+        <a href="{% if item.lang != site.default_lang %}/{{ item.lang }}{% endif %}{{ page.url | replace: '/'+site.default_lang+'/', '/' }}" class="lang-select" data-lang="{{ item.lang }}">
           {% if item.img %}
           <img src="{{ item.img }}" title="{{ item.text }}">
           {% else %}
@@ -105,4 +105,3 @@ function googleTranslateElementInit() {
 }
 </script>
 
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>

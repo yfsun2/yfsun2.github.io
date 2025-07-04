@@ -1,8 +1,9 @@
-sidebar:
+nav:
   home: "Home"
   about: "About"
-  categories: "Categories"
   archives: "Archives"
+  categories: "Categories"
   tags: "Tags"
-  links: "Links"
-  subscribe: "Subscribe"
+  search: "Search"
+  switch_language: "Switch Language"
+
