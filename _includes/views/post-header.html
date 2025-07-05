@@ -17,9 +17,10 @@
     {%- include functions.html func='get_reading_time' -%}
     {% assign reading_time = return %}
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
-    <span id="busuanzi_container_page_pv" class="left-vsplit">
-    阅读量: <span id="busuanzi_value_page_pv"></span> 次
-    </span>
+    <span class="left-vsplit">今日总阅读量 <span id="busuanzi_today_page_pv">加载中...</span> 次 </span>
+    <span class="left-vsplit">今日总访客量 <span id="busuanzi_today_page_uv">加载中...</span> 人</span>
+    <span class="left-vsplit">总阅读量 <span id="busuanzi_page_pv">加载中...</span> 次</span>
+    <span class="left-vsplit">总访客量 <span id="busuanzi_page_uv">加载中...</span> 人</span>
   </div>
 
   {%- if page.tags.size > 0 -%}
