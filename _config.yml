@@ -237,4 +237,9 @@ plugins:
   - jekyll-paginate
   - jekyll-spaceship
 
+#jekyll-spaceship:  # 插件名（常见为 jekyll-spaceship 或 mathjax-processor）
+#  math-processor:
+#    enable: false  # 关闭插件自带的 MathJax
+#  polyfill-processor:
+#    enable: false
 exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
