@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/jekyll-theme-yat/feed.xml" rel="self" type="application/atom+xml" /><link href="/jekyll-theme-yat/" rel="alternate" type="text/html" /><updated>2025-07-05T14:23:41+00:00</updated><id>/jekyll-theme-yat/feed.xml</id><title type="html">孙亚飞的个人博客</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>yfsun2</name></author><entry><title type="html">Latex语法</title><link href="/jekyll-theme-yat/%E8%AF%AD%E6%B3%95/2025/07/05/Latex%E8%AF%AD%E6%B3%95.html" rel="alternate" type="text/html" title="Latex语法" /><published>2025-07-05T00:00:00+00:00</published><updated>2025-07-05T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E8%AF%AD%E6%B3%95/2025/07/05/Latex%E8%AF%AD%E6%B3%95</id><content type="html" xml:base="/jekyll-theme-yat/%E8%AF%AD%E6%B3%95/2025/07/05/Latex%E8%AF%AD%E6%B3%95.html"><![CDATA[<h1 id="希腊字母">希腊字母</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nv">\alpha</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\beta</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\gamma</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\delta</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\epsilon</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\lambda</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\Lambda</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\Gamma</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\varGamma</span><span class="p">$</span>
+</code></pre></div></div>
+
+<p>$\alpha$
+$\beta$
+$\gamma$
+$\delta$
+$\epsilon$
+$\lambda$
+$\Lambda$
+$\Gamma$
+$\varGamma$</p>
+
+<h1 id="上下标">上下标</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">x</span><span class="p">^</span><span class="m">2</span><span class="p">$</span>
+<span class="p">$</span><span class="nb">a</span><span class="p">_</span><span class="m">2</span><span class="p">$</span>
+<span class="p">$</span><span class="nb">x</span><span class="p">^{</span><span class="nb">i</span><span class="o">+</span><span class="nb">j</span><span class="p">}$</span>
+<span class="p">$</span><span class="nb">x</span><span class="p">_</span><span class="nb">i</span><span class="p">$</span>
+<span class="p">$</span><span class="nb">x</span><span class="p">_{</span><span class="nv">\text</span><span class="nb"> i</span><span class="p">}$</span>
+<span class="p">$</span><span class="nv">\arg\limits</span><span class="p">_{</span><span class="nb">i</span><span class="o">=</span><span class="m">0</span><span class="p">}$</span>
+<span class="p">$</span><span class="nv">\arg\limits</span><span class="p">^{</span><span class="nv">\infty</span><span class="p">}$</span>
+</code></pre></div></div>
+<p>$x^2$
+$a_2$
+$x^{i+j}$
+$x_i$
+$x_{\text i}$
+$\arg\limits_{i=0}$
+$\arg\limits^{\infty}$</p>
+
+<h1 id="分式">分式</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nv">\frac</span><span class="p">{</span><span class="nb">aa</span><span class="p">}{</span><span class="nb">bb</span><span class="p">}$</span>
+<span class="p">$</span><span class="nv">\frac</span><span class="nb"> a b</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\frac</span><span class="p">{</span><span class="nb">x</span><span class="o">+</span><span class="nb">y</span><span class="p">}{</span><span class="m">1</span><span class="o">+</span><span class="nb">z</span><span class="p">}$</span>
+<span class="p">$</span><span class="nv">\dfrac</span><span class="p">{</span><span class="nb">ab</span><span class="p">}{</span><span class="nb">cd</span><span class="p">}$</span>
+</code></pre></div></div>
+<p>$\frac{aa}{bb}$
+$\frac a b$
+$\frac{x+y}{1+z}$
+$\dfrac{ab}{cd}$</p>
+
+<h1 id="根式">根式</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nv">\sqrt</span><span class="nb"> </span><span class="m">2</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\sqrt</span><span class="o">[</span><span class="nb">根的次数</span><span class="o">]</span><span class="p">{</span><span class="nb">数值</span><span class="p">}$</span>
+<span class="p">$</span><span class="nv">\sqrt</span><span class="p">{</span><span class="nb">x</span><span class="o">+</span><span class="nb">y</span><span class="p">}$</span>
+<span class="p">$</span><span class="nv">\sqrt</span><span class="o">[</span><span class="m">3</span><span class="o">]</span><span class="p">{</span><span class="nb">x</span><span class="o">+</span><span class="nb">y</span><span class="p">}$</span>
+</code></pre></div></div>
+
+<p>$\sqrt 2$
+$\sqrt[根的次数]{数值}$
+$\sqrt{x+y}$
+$\sqrt[3]{x+y}$</p>
+
+<h1 id="运算符">运算符</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+,-,<span class="p">$</span><span class="nv">\pm</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\mp</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\times</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\cdot</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\div</span><span class="p">$</span>
+<span class="p">$</span><span class="nb">&gt;</span><span class="p">$</span>,<span class="p">$</span><span class="nb">&lt;</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\ge</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\le</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\gg</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\ll</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\ne</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\approx</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\equiv</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\cap</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\cup</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\in</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\notin</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\subseteq</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\subsetneqq</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\varnothing</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\forall</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\exists</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\nexists</span><span class="p">$</span>,
+<span class="p">$</span><span class="nv">\because</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\therefore</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\ </span><span class="nb">R</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\ </span><span class="nb">Q</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\ </span><span class="nb">N</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\ </span><span class="nb">Z</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\ </span><span class="nb">Z</span><span class="p">_</span><span class="o">+</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\mathcal</span><span class="nb"> F</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\mathscr</span><span class="nb"> F</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\cdots</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\vdots</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\ddots</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\infty</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\partial</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\nabla</span><span class="p">$</span>,
+<span class="p">$</span><span class="nv">\propto</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\degree</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\sin</span><span class="nb"> x</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\log</span><span class="p">_</span><span class="m">2</span><span class="nb"> x</span><span class="p">$</span>,<span class="p">$</span><span class="nb">ln x</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\to</span><span class="m">0</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\lim</span><span class="p">_{</span><span class="nb">x</span><span class="nv">\to</span><span class="m">0</span><span class="p">}$</span>,<span class="p">$</span><span class="nv">\lim\limits</span><span class="p">_{</span><span class="nb">x</span><span class="nv">\to</span><span class="m">0</span><span class="p">}$</span>
+<span class="p">$</span><span class="nv">\sim</span><span class="p">$</span>
+</code></pre></div></div>
+<p>+,-,$\pm$,$\mp$,$\times$,$\cdot$,$\div$
+$&gt;$,$&lt;$,$\ge$,$\le$,$\gg$,$\ll$,$\ne$,$\approx$,$\equiv$
+$\cap$,$\cup$,$\in$,$\notin$,$\subseteq$,$\subsetneqq$,$\varnothing$
+$\forall$,$\exists$,$\nexists$,
+$\because$,$\therefore$
+$\ R$,$\ Q$,$\ N$,$\ Z$,$\ Z_+$
+$\mathcal F$,$\mathscr F$,$\cdots$,$\vdots$,$\ddots$
+$\infty$,$\partial$,$\nabla$,
+$\propto$,$\degree$
+$\sin x$,$\log_2 x$,$ln x$
+$\to0$,$\lim_{x\to0}$,$\lim\limits_{x\to0}$
+$\sim$</p>
+
+<h1 id="大型运算符">大型运算符</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nv">\sum</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\prod</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\int</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\iint</span><span class="p">$</span>,
+<span class="p">$</span><span class="nv">\iiint</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\oint</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\oiint</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\oiiint</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\int</span><span class="p">_{</span><span class="o">-</span><span class="nv">\infty</span><span class="p">}^</span><span class="m">0</span><span class="nb"> f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="nv">\,</span><span class="nb"> </span><span class="nv">\text</span><span class="nb"> d x</span><span class="p">$</span>
+</code></pre></div></div>
+
+<p>$\sum$,$\prod$,$\int$,$\iint$,
+$\iiint$,$\oint$,$\oiint$,$\oiiint$
+$\int_{-\infty}^0 f(x)\, \text d x$</p>
+
+<h1 id="空格">空格</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nb">a  a</span><span class="p">$</span>
+<span class="p">$</span><span class="nb">a</span><span class="nv">\ </span><span class="nb">a</span><span class="p">$</span>
+<span class="p">$</span><span class="nb">a</span><span class="nv">\quad</span><span class="nb"> a</span><span class="p">$</span>
+<span class="p">$</span><span class="nb">a</span><span class="nv">\qquad</span><span class="nb"> a</span><span class="p">$</span>
+</code></pre></div></div>
+
+<p>$a  a$
+$a\ a$
+$a\quad a$
+$a\qquad a$</p>
+
+<h1 id="标注符号">标注符号</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nv">\hat</span><span class="p">{</span><span class="nb">a</span><span class="p">}$</span>,
+<span class="p">$</span><span class="nv">\vec</span><span class="p">{</span><span class="nb">a</span><span class="p">}$</span>,
+</code></pre></div></div>
+
+<p>$\hat{a}$,
+$\vec{a}$,</p>
+
+<h1 id="箭头">箭头</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nv">\leftarrow</span><span class="nb"> or </span><span class="nv">\gets</span><span class="p">$</span>
+</code></pre></div></div>
+<p>$\leftarrow or \gets$</p>
+
+<h1 id="括号">括号</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="nv">\{</span><span class="nb"> </span><span class="nv">\}</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\lceil</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\rceil</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\lfloor</span><span class="p">$</span>,<span class="p">$</span><span class="nv">\rfloor</span><span class="p">$</span>
+<span class="p">$</span><span class="nb">| |</span><span class="p">$</span>
+</code></pre></div></div>
+<p>${ }$
+$\lceil$,$\rceil$
+$\lfloor$,$\rfloor$
+$| |$</p>
+
+<h1 id="多行公式">多行公式</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">align</span><span class="p">}</span><span class="nb">
+a</span><span class="o">+</span><span class="nb">b</span><span class="o">=</span><span class="nb">c</span><span class="nv">\\</span><span class="nb">a</span><span class="o">+</span><span class="nb">f</span><span class="o">=</span><span class="nb">ddd</span><span class="nv">\\</span><span class="nb">cdd</span><span class="o">=</span><span class="nb">jfd
+</span><span class="nv">\end</span><span class="p">{</span><span class="nb">align</span><span class="p">}$$</span>
+</code></pre></div></div>
+<p>\(\begin{align}
+a+b=c\\a+f=ddd\\cdd=jfd
+\end{align}\)</p>
+
+<h1 id="大括号条件表达">大括号，条件表达</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="nb">f</span><span class="o">(</span><span class="nb">x</span><span class="o">)=</span><span class="nb">
+    </span><span class="nv">\begin</span><span class="p">{</span><span class="nb">cases</span><span class="p">}</span><span class="nb">
+    </span><span class="nv">\sin</span><span class="nb"> x,</span><span class="o">-</span><span class="m">1</span><span class="nv">\le</span><span class="nb"> x</span><span class="nv">\le</span><span class="m">2</span><span class="nv">\\</span><span class="nb">
+    </span><span class="nv">\cos</span><span class="nb"> x, else
+    </span><span class="nv">\end</span><span class="p">{</span><span class="nb">cases</span><span class="p">}$$</span>
+<span class="p">$</span><span class="nv">\left</span><span class="o">(</span><span class="nb">a</span><span class="nv">\right</span><span class="o">)</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\big</span><span class="o">(</span><span class="nb">a</span><span class="nv">\big</span><span class="o">)</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\Big</span><span class="o">(</span><span class="nb">a</span><span class="nv">\Big</span><span class="o">)</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\bigg</span><span class="o">[</span><span class="nb">a</span><span class="nv">\bigg</span><span class="o">]</span><span class="p">$</span>
+<span class="p">$</span><span class="nv">\Bigg\{</span><span class="nb">a</span><span class="nv">\Bigg\}</span><span class="p">$</span>
+</code></pre></div></div>
+<p>\(f(x)=
+\begin{cases}
+\sin x,-1\le x\le2\\
+\cos x, else
+\end{cases}\)
+$\left(a\right)$
+$\big(a\big)$
+$\Big(a\Big)$
+$\bigg[a\bigg]$
+$\Bigg{a\Bigg}$</p>
+
+<h1 id="矩阵">矩阵</h1>
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="nv">\bf</span><span class="nb"> B</span><span class="p">^</span><span class="nb">T </span><span class="p">$$</span>
+<span class="p">$$</span><span class="nb">
+</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">matrix</span><span class="p">}</span><span class="nb">
+a </span><span class="p">&amp;</span><span class="nb"> b</span><span class="p">&amp;</span><span class="nb">c</span><span class="p">&amp;</span><span class="nv">\cdots</span><span class="p">&amp;</span><span class="nb">d</span><span class="nv">\\</span><span class="nb">
+</span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\ddots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nv">\vdots</span><span class="nb"> </span><span class="nv">\\</span><span class="nb">
+e </span><span class="p">&amp;</span><span class="nb"> k </span><span class="p">&amp;</span><span class="nb"> f </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\cdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="m">0</span><span class="nb">
+</span><span class="nv">\end</span><span class="p">{</span><span class="nb">matrix</span><span class="p">}</span><span class="nb">
+</span><span class="p">$$</span>
+
+<span class="p">$$</span><span class="nb">
+</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">bmatrix</span><span class="p">}</span><span class="nb">
+a </span><span class="p">&amp;</span><span class="nb"> b</span><span class="p">&amp;</span><span class="nb">c</span><span class="p">&amp;</span><span class="nv">\cdots</span><span class="p">&amp;</span><span class="nb">d</span><span class="nv">\\</span><span class="nb">
+</span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\ddots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nv">\vdots</span><span class="nb"> </span><span class="nv">\\</span><span class="nb">
+e </span><span class="p">&amp;</span><span class="nb"> k </span><span class="p">&amp;</span><span class="nb"> f </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\cdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="m">0</span><span class="nb">
+</span><span class="nv">\end</span><span class="p">{</span><span class="nb">bmatrix</span><span class="p">}</span><span class="nb"> 
+</span><span class="p">$$</span>
+
+<span class="p">$$</span><span class="nb">
+</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">pmatrix</span><span class="p">}</span><span class="nb">
+a </span><span class="p">&amp;</span><span class="nb"> b</span><span class="p">&amp;</span><span class="nb">c</span><span class="p">&amp;</span><span class="nv">\cdots</span><span class="p">&amp;</span><span class="nb">d</span><span class="nv">\\</span><span class="nb">
+</span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\ddots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nv">\vdots</span><span class="nb"> </span><span class="nv">\\</span><span class="nb">
+e </span><span class="p">&amp;</span><span class="nb"> k </span><span class="p">&amp;</span><span class="nb"> f </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\cdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="m">0</span><span class="nb">
+</span><span class="nv">\end</span><span class="p">{</span><span class="nb">pmatrix</span><span class="p">}</span><span class="nb"> 
+</span><span class="p">$$</span>
+
+<span class="p">$$</span><span class="nb">
+</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">vmatrix</span><span class="p">}</span><span class="nb">
+a </span><span class="p">&amp;</span><span class="nb"> b</span><span class="p">&amp;</span><span class="nb">c</span><span class="p">&amp;</span><span class="nv">\cdots</span><span class="p">&amp;</span><span class="nb">d</span><span class="nv">\\</span><span class="nb">
+</span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\vdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\ddots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nv">\vdots</span><span class="nb"> </span><span class="nv">\\</span><span class="nb">
+e </span><span class="p">&amp;</span><span class="nb"> k </span><span class="p">&amp;</span><span class="nb"> f </span><span class="p">&amp;</span><span class="nb"> </span><span class="nv">\cdots</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="m">0</span><span class="nb">
+</span><span class="nv">\end</span><span class="p">{</span><span class="nb">vmatrix</span><span class="p">}</span><span class="nb"> 
+</span><span class="p">$$</span>
+</code></pre></div></div>
+
+\[\bf B^T\]
+
+\[\begin{matrix} a &amp; b&amp;c&amp;\cdots&amp;d\\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp;\vdots \\ e &amp; k &amp; f &amp; \cdots &amp; 0 \end{matrix}\]
+
+\[\begin{bmatrix} a &amp; b&amp;c&amp;\cdots&amp;d\\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp;\vdots \\ e &amp; k &amp; f &amp; \cdots &amp; 0 \end{bmatrix}\]
+
+\[\begin{pmatrix} a &amp; b&amp;c&amp;\cdots&amp;d\\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp;\vdots \\ e &amp; k &amp; f &amp; \cdots &amp; 0 \end{pmatrix}\]
+
+\[\begin{vmatrix} a &amp; b&amp;c&amp;\cdots&amp;d\\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp;\vdots \\ e &amp; k &amp; f &amp; \cdots &amp; 0 \end{vmatrix}\]]]></content><author><name>yfsun2</name></author><category term="语法" /><category term="latex" /><summary type="html"><![CDATA[希腊字母 $\alpha$ $\beta$ $\gamma$ $\delta$ $\epsilon$ $\lambda$ $\Lambda$ $\Gamma$ $\varGamma$]]></summary></entry><entry><title type="html">Windows10安装mysql8.0.21</title><link href="/jekyll-theme-yat/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/2025/07/05/mysql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html" rel="alternate" type="text/html" title="Windows10安装mysql8.0.21" /><published>2025-07-05T00:00:00+00:00</published><updated>2025-07-05T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/2025/07/05/mysql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B</id><content type="html" xml:base="/jekyll-theme-yat/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/2025/07/05/mysql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html"><![CDATA[<h2 id="一mysql下载">一、MySQL下载</h2>
+<p>MySQL直接去官网下载就行，选择community版本（免费),<a href="https://dev.mysql.com/downloads/mysql/">下载链接</a>
+选择community server-ZIP Archive安装包，第二个是调试文件。</p>
+<h2 id="二安装与配置">二、安装与配置</h2>
+<p>将下载好的压缩包解压缩到全英文目录下，比如我在D盘新建了MySQL文件夹，解压到该文件夹下，<code class="language-plaintext highlighter-rouge">D:/MySQL</code></p>
+
+<p>然后把mysql 8.0.21所在的路径<code class="language-plaintext highlighter-rouge">D:\MySQL\mysql-8.0.21-winx64</code>添加到环境变量Path中</p>
+
+<p>接下来正式安装和配置MySQL：</p>
+
+<p>首先在<code class="language-plaintext highlighter-rouge">D:\MySQL\mysql-8.0.21-winx64</code>路径下创建一个<code class="language-plaintext highlighter-rouge">my.ini</code>文件，直接新建文本文档，然后重命名为my.ini即可。</p>
+
+<p>在文档中添加以下内容：
+<strong>（注意修改basedir和datadir的路径）</strong>
+注意服务端的字符集最好使用utf8mb4，这个才是真正意义的utf8，以后版本的utf8代表utf8mb3，代表3个字节的，而我们真正意义上的utf8是4字节的，所以使用utf8mb4，这次mysql的遗留问题。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[mysqld]
+### 设置3306端口
+port=3306
+# 设置mysql的安装目录
+basedir=D:\\MySQL\\mysql-8.0.21-winx64   # 此处为mysql的解压缩路径
+# 设置mysql数据库的数据的存放目录
+datadir=D:\\MySQL\\mysql-8.0.21-winx64\\Data   # 此处同上，先不要在路径中创建Data目录，后面初始化时会自动生成
+# 允许最大连接数
+max_connections=200
+# 允许连接失败的次数。这是为了防止有人从该主机试图攻击数据库系统
+max_connect_errors=10
+# 服务端使用的字符集默认为UTF8，也可以使用utf8mb4，以后版本utf8代表mb3 !!! ###
+character-set-server=utf8
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
+# 默认使用“mysql_native_password”插件认证
+default_authentication_plugin=mysql_native_password
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8
+[client]
+# 设置mysql客户端连接服务端时默认使用的端口
+port=3306
+default-character-set=utf8
+</code></pre></div></div>
+
+<p>以管理员权限打开cmd（注意要以管理员权限打开），并将路径切换到<code class="language-plaintext highlighter-rouge">D:\MySQL\mysql-8.0.21-winx64\bin</code></p>
+
+<p>输入mysqld –initialize –console，进行初始化。该步可以得到mysql的初始密码，root@localhost后面那一串就是初始密码，以下为命令输入后的显示。</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D:<span class="se">\M</span>ySQL<span class="se">\m</span>ysql-8.0.21-winx64<span class="se">\b</span><span class="k">in</span><span class="o">&gt;</span>mysqld <span class="nt">--initialize</span> <span class="nt">--console</span>
+2020-05-10T11:26:21.895908Z 0 <span class="o">[</span>System] <span class="o">[</span>MY-013169] <span class="o">[</span>Server] D:<span class="se">\M</span>ySQL<span class="se">\m</span>ysql-8.0.21-winx64<span class="se">\b</span><span class="k">in</span><span class="se">\m</span>ysqld.exe <span class="o">(</span>mysqld 8.0.21<span class="o">)</span> initializing of server <span class="k">in </span>progress as process 9764
+2020-05-10T11:26:21.897278Z 0 <span class="o">[</span>Warning] <span class="o">[</span>MY-013242] <span class="o">[</span>Server] <span class="nt">--character-set-server</span>: <span class="s1">'utf8'</span> is currently an <span class="nb">alias </span><span class="k">for </span>the character <span class="nb">set </span>UTF8MB3, but will be an <span class="nb">alias </span><span class="k">for </span>UTF8MB4 <span class="k">in </span>a future release. 
+Please consider using UTF8MB4 <span class="k">in </span>order to be unambiguous.
+2020-05-10T11:26:21.915225Z 1 <span class="o">[</span>System] <span class="o">[</span>MY-013576] <span class="o">[</span>InnoDB] InnoDB initialization has started.
+2020-05-10T11:26:22.619057Z 1 <span class="o">[</span>System] <span class="o">[</span>MY-013577] <span class="o">[</span>InnoDB] InnoDB initialization has ended.
+2020-05-10T11:26:24.265774Z 6 <span class="o">[</span>Note] <span class="o">[</span>MY-010454] <span class="o">[</span>Server] A temporary password is generated <span class="k">for </span>root@localhost: 9Zh31zk-@mof
+</code></pre></div></div>
+
+<p>输入<code class="language-plaintext highlighter-rouge">mysqld --install</code>（如果需要安装多个mysql服务，这步输入<code class="language-plaintext highlighter-rouge">mysqld --install [服务名]</code>）</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D:<span class="se">\M</span>ySQL<span class="se">\m</span>ysql-8.0.21-winx64<span class="se">\b</span><span class="k">in</span><span class="o">&gt;</span>mysqld <span class="nt">--install</span>
+Service successfully installed.
+</code></pre></div></div>
+
+<p>显示Service successfully installed则说明安装成功</p>
+
+<p>输入<code class="language-plaintext highlighter-rouge">net start mysql</code>，启动MySQL服务</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D:<span class="se">\M</span>ySQL<span class="se">\m</span>ysql-8.0.21-winx64<span class="se">\b</span><span class="k">in</span><span class="o">&gt;</span>net start mysql
+The MySQL service is starting.
+The MySQL service was started successfully.
+</code></pre></div></div>
+
+<p>输入<code class="language-plaintext highlighter-rouge">mysql -u root -p</code>，使用初始密码登录mysql，在Enter password后输入初始密码</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D:<span class="se">\M</span>ySQL<span class="se">\m</span>ysql-8.0.21-winx64<span class="se">\b</span><span class="k">in</span><span class="o">&gt;</span>mysql <span class="nt">-u</span> root <span class="nt">-p</span>
+Enter password: <span class="k">************</span>
+Welcome to the MySQL monitor.  Commands end with <span class="p">;</span> or <span class="se">\g</span><span class="nb">.</span>
+Your MySQL connection <span class="nb">id </span>is 8
+Server version: 8.0.21
+ 
+Copyright <span class="o">(</span>c<span class="o">)</span> 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+ 
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+ 
+Type <span class="s1">'help;'</span> or <span class="s1">'\h'</span> <span class="k">for </span>help. Type <span class="s1">'\c'</span> to clear the current input statement.
+</code></pre></div></div>
+<p>登录后，把初始密码修改掉，可以设置成自己容易记住的密码。
+输入<code class="language-plaintext highlighter-rouge">ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '自己定义的密码';</code>（分号一定要带）</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; ALTER USER <span class="s1">'root'</span>@<span class="s1">'localhost'</span> IDENTIFIED WITH mysql_native_password BY <span class="s1">'自己定义的密码'</span><span class="p">;</span>
+Query OK, 0 rows affected <span class="o">(</span>0.02 sec<span class="o">)</span>
+</code></pre></div></div>
+<p>到这一步就完成了
+输入<code class="language-plaintext highlighter-rouge">show databases</code>;，可以查看包含哪些数据表</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql&gt; show databases<span class="p">;</span>
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows <span class="k">in </span><span class="nb">set</span> <span class="o">(</span>0.01 sec<span class="o">)</span>
+</code></pre></div></div>
+<h2 id="三后处理">三、后处理</h2>
+<p>安装完成mysql自动开启服务开机自启动，如不经常使用，可以使用<code class="language-plaintext highlighter-rouge">net stop mysql</code>关闭服务并将服务改为手动启动，使用 <code class="language-plaintext highlighter-rouge">net start mysql</code> 开启服务。</p>]]></content><author><name>yfsun2</name></author><category term="安装教程" /><category term="mysql" /><summary type="html"><![CDATA[一、MySQL下载 MySQL直接去官网下载就行，选择community版本（免费),下载链接 选择community server-ZIP Archive安装包，第二个是调试文件。 二、安装与配置 将下载好的压缩包解压缩到全英文目录下，比如我在D盘新建了MySQL文件夹，解压到该文件夹下，D:/MySQL]]></summary></entry><entry><title type="html">Markdown语法</title><link href="/jekyll-theme-yat/%E8%AF%AD%E6%B3%95/2025/06/30/makdown%E8%AF%AD%E6%B3%95.html" rel="alternate" type="text/html" title="Markdown语法" /><published>2025-06-30T00:00:00+00:00</published><updated>2025-06-30T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E8%AF%AD%E6%B3%95/2025/06/30/makdown%E8%AF%AD%E6%B3%95</id><content type="html" xml:base="/jekyll-theme-yat/%E8%AF%AD%E6%B3%95/2025/06/30/makdown%E8%AF%AD%E6%B3%95.html"><![CDATA[<h2 id="headers-标题">Headers 标题</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># H1</span>
+<span class="gu">## H2</span>
+<span class="gu">### H3</span>
+<span class="gu">#### H4</span>
+<span class="gu">##### H5</span>
+<span class="gu">###### H6</span>
+</code></pre></div></div>
+
+<h2 id="文本强调">文本强调</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ge">*斜体*</span> or _斜体_
+<span class="gs">**加粗**</span> or __加粗__
+<span class="ges">***粗斜体***</span> or ___粗斜体___
+~~中划线~~  
+<span class="nt">&lt;u&gt;</span>下划线<span class="nt">&lt;/u&gt;</span>
+</code></pre></div></div>
+
+<h2 id="列表">列表</h2>
+
+<h3 id="无序列表">无序列表</h3>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">*</span> 子项
+<span class="p">*</span> 子项
+<span class="p">*</span> 子项
+<span class="p">
++</span> 子项
+<span class="p">+</span> 子项
+<span class="p">+</span> 子项
+<span class="p">
+-</span> 子项
+<span class="p">-</span> 子项
+<span class="p">-</span> 子项
+</code></pre></div></div>
+
+<h3 id="有序列表">有序列表</h3>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> 第一行
+<span class="p">2.</span> 第二行
+<span class="p">3.</span> 第三行
+
+组合
+<span class="p">1.</span> 第一行
+<span class="p">-</span> 第二行
+<span class="p">-</span> 第三行
+</code></pre></div></div>
+
+<h2 id="links-链接title为可选项">Links 链接（title为可选项）</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>内嵌方式 
+<span class="p">[</span><span class="nv">百度</span><span class="p">](</span><span class="sx">https://www.baidu.com</span><span class="p">)</span>
+引用方式 
+<span class="p">[</span><span class="nv">链接文字</span><span class="p">][</span><span class="ss">id</span><span class="p">]</span>
+<span class="p">[</span><span class="ss">id</span><span class="p">]:</span> <span class="sx">https://www.baidu.com/</span> <span class="nn">"标题文字"</span>
+引用存储文件
+<span class="p">[</span><span class="nv">链接文字</span><span class="p">](</span><span class="sx">../path/file/readme.txt</span> <span class="nn">"标题文字"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="image图片">Image图片</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>内嵌方式
+<span class="p">![</span><span class="nv">替代文字</span><span class="p">](</span><span class="sx">https://img2024.cnblogs.com/blog/3370556/202401/3370556-20240109213831570-139775648.png</span> <span class="nn">"标题文字"</span><span class="p">)</span>
+引用方式
+<span class="p">![</span><span class="nv">替代文字</span><span class="p">][</span><span class="ss">logo</span><span class="p">]</span>
+<span class="p">[</span><span class="ss">logo</span><span class="p">]:</span> <span class="sx">https://img2024.cnblogs.com/blog/3370556/202401/3370556-20240109213831570-139775648.png</span> <span class="nn">"标题文字"</span>
+</code></pre></div></div>
+
+<h2 id="代码和语法高亮">代码和语法高亮</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>行内代码
+<span class="sb">`行内代码`</span>
+<span class="sb">`` `包含引号` ``</span>
+</code></pre></div></div>
+
+<h3 id="语法高亮">语法高亮</h3>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>xxx<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span><span class="p">{</span><span class="nl">font-size</span><span class="p">:</span><span class="m">12px</span><span class="p">}</span>
+</code></pre></div></div>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">s</span><span class="o">=</span><span class="dl">"</span><span class="s2">Javascript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
+<span class="nf">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</code></pre></div></div>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+	<span class="k">echo</span> <span class="s2">"hello world!"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+<h2 id="block-code代码分组">Block Code代码分组</h2>
+<blockquote>
+  <p>Email-style angle brackets</p>
+</blockquote>
+
+<h2 id="换行">换行</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;/br</span> <span class="nt">&gt;</span>
+</code></pre></div></div>
+<h2 id="水平分割线">水平分割线</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">***
+* * *</span>
+<span class="p">- - -
+</span></code></pre></div></div>
+<h2 id="转义字符">转义字符</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="se">\\</span> <span class="se">\`</span> <span class="se">\*</span> <span class="se">\_</span> <span class="se">\{</span> <span class="se">\}</span> <span class="se">\[</span> <span class="se">\]</span> <span class="se">\(</span> <span class="se">\)</span> <span class="se">\#</span> <span class="se">\+</span> <span class="se">\-</span> <span class="se">\.</span> <span class="se">\!</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="tabel--表格">Tabel  表格</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| firsttttttttt | seconddddddddd | thirddddddddddd |
+| :------------ | -------------: | :-------------: |
+| lucy          |           girl |       18        |
+|               |                |                 |
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">firsttttttttt</th>
+      <th style="text-align: right">seconddddddddd</th>
+      <th style="text-align: center">thirddddddddddd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">lucy</td>
+      <td style="text-align: right">girl</td>
+      <td style="text-align: center">18</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>yfsun2</name></author><category term="语法" /><category term="markdown" /><summary type="html"><![CDATA[Headers 标题 # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6]]></summary></entry><entry><title type="html">我的第一篇博客</title><link href="/jekyll-theme-yat/markdown/2025/06/30/welcome-to-blog.html" rel="alternate" type="text/html" title="我的第一篇博客" /><published>2025-06-30T00:00:00+00:00</published><updated>2025-06-30T00:00:00+00:00</updated><id>/jekyll-theme-yat/markdown/2025/06/30/welcome-to-blog</id><content type="html" xml:base="/jekyll-theme-yat/markdown/2025/06/30/welcome-to-blog.html"><![CDATA[<h2 id="我的第一篇博客">我的第一篇博客</h2>
+
+<p>这是我的第一篇博客，欢迎大家来阅读！</p>]]></content><author><name>yfsun2</name></author><category term="markdown" /><category term="随笔" /><summary type="html"><![CDATA[我的第一篇博客]]></summary></entry><entry><title type="html">115.不同子序列</title><link href="/jekyll-theme-yat/%E9%A2%98%E8%A7%A3/2024/11/01/%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97.html" rel="alternate" type="text/html" title="115.不同子序列" /><published>2024-11-01T00:00:00+00:00</published><updated>2024-11-01T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E9%A2%98%E8%A7%A3/2024/11/01/%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97</id><content type="html" xml:base="/jekyll-theme-yat/%E9%A2%98%E8%A7%A3/2024/11/01/%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97.html"><![CDATA[<p><a href="https://leetcode.cn/problems/distinct-subsequences/description/">题目链接</a></p>
+<h2 id="一记忆化搜索">一.记忆化搜索</h2>
+<h3 id="正序版">正序版</h3>
+<p><strong>状态定义</strong>：定义$dfs(i,j)$表示$s[0:i]$的子序列出现$t[0:j]$的个数.</p>
+
+<p><strong>转移方程</strong>：当$s[i]==t[j]$时可以匹配,也可以不匹配，否则只能不匹配跳过$s[i]$,即</p>
+
+\[dfs(i,j)=
+
+\begin{cases}
+
+dfs(i+1,j),s[i]\ne t[j]\\
+
+dfs(i+1,j)+dfs(i+1,j+1),s[i]==t[j]
+
+\end{cases}\]
+
+<p><strong>递归边界</strong>：当$j==m$时，说明字符串$t$完全匹配上$s$的子序列，返回$1$种方案，当$i&gt;=n$时，$t$没匹配完,不存在这种方案返回$0$.</p>
+
+<p><strong>递归入口</strong>：$dfs(0,0)$，其中$n$是$s$的长度，$m$是$t$的长度.</p>
+
+<h3 id="倒序版">倒序版</h3>
+
+<p><strong>状态定义</strong>：定义$dfs(i,j)$表示$s[0:i)$的子序列出现$t[0:j)$的个数.</p>
+
+<p><strong>转移方程</strong>：当$s[i-1]==t[j-1]$时可以匹配,也可以不匹配，否则只能不匹配跳过$s[i-1]$,即</p>
+
+\[dfs(i,j)=
+
+\begin{cases}
+
+dfs(i-1,j),s[i-1]\ne t[j-1]\\
+
+dfs(i-1,j)+dfs(i-1,j-1),s[i-1]==t[j-1]
+
+\end{cases}\]
+
+<p><strong>递归边界</strong>：当$j==0$时，说明字符串$t$完全匹配上$s$的子序列，返回$1$种方案，当$i&lt;=0$时，$t$没匹配完,不存在这种方案返回$0$.</p>
+
+<p><strong>递归入口</strong>：$dfs(n,m)$，其中$n$是$s$的长度，$m$是$t$的长度.</p>
+
+<h2 id="二11翻译成递推">二.1:1翻译成递推</h2>
+
+<p>根据记忆化搜索倒序版可以1:1翻译成递推.</p>
+
+<p><strong>状态定义</strong>：定义$f[i+1][j+1]$表示$s[0:i]$的子序列出现$t[0:j]$的个数.</p>
+
+<p><strong>转移方程</strong>：当$s[i]==t[j]$时可以匹配,也可以不匹配，否则只能不匹配跳过$s[i]$,即</p>
+
+\[f[i+1][j+1]=
+
+\begin{cases}
+
+f[i][j+1],s[i]\ne t[j]\\
+
+f[i][j+1]+f[i][j],s[i]==t[j]
+
+\end{cases}\]
+
+<p><strong>初始化</strong>：当$j==0$时，说明$t$是空子序列可以任意匹配$s$的子序列是一种方案，即$f[i][0]=1$.</p>
+
+<p><strong>答案</strong>：$f[n][m]$，其中$n$是$s$的长度，$m$是$t$的长度.</p>
+
+<h2 id="三空间优化">三.空间优化</h2>
+<p>因为$f[i+1][<em>]$只与$f[i][</em>]$ 有关，可以去掉第一个维度，但第二个维度要倒序枚举.</p>
+
+<h2 id="四复杂度分析">四.复杂度分析</h2>
+<ul>
+  <li>时间复杂度：$\mathcal{O}(nm)$，其中$n$是$s$的长度，$m$是$t$的长度。</li>
+  <li>空间复杂度：$\mathcal{O}(m)$.</li>
+</ul>
+
+<h2 id="五代码">五.代码</h2>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+<span class="err"> </span> <span class="err"> </span> <span class="k">const</span> <span class="kt">int</span> <span class="n">mod</span><span class="o">=</span><span class="mf">1e9</span><span class="o">+</span><span class="mi">7</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">int</span> <span class="n">numDistinct</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">,</span> <span class="n">string</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">(),</span><span class="n">m</span><span class="o">=</span><span class="n">t</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">memo</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">));</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">auto</span> <span class="n">dfs</span><span class="o">=</span><span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;&amp;</span><span class="n">dfs</span><span class="p">,</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="kt">int</span> <span class="n">j</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">int</span><span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="n">m</span><span class="p">){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&gt;=</span><span class="n">n</span><span class="p">){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">res</span><span class="o">=</span><span class="n">dfs</span><span class="p">(</span><span class="n">dfs</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="p">]){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">res</span><span class="o">=</span><span class="p">(</span><span class="n">res</span><span class="o">+</span><span class="n">dfs</span><span class="p">(</span><span class="n">dfs</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">%</span><span class="n">mod</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">res</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">};</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">dfs</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+<span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+<span class="err"> </span> <span class="err"> </span> <span class="k">const</span> <span class="kt">int</span> <span class="n">mod</span><span class="o">=</span><span class="mf">1e9</span><span class="o">+</span><span class="mi">7</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">int</span> <span class="n">numDistinct</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">,</span> <span class="n">string</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">(),</span><span class="n">m</span><span class="o">=</span><span class="n">t</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">memo</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">));</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">auto</span> <span class="n">dfs</span><span class="o">=</span><span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;&amp;</span><span class="n">dfs</span><span class="p">,</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="kt">int</span> <span class="n">j</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">int</span><span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">j</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=-</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">res</span><span class="o">=</span><span class="n">dfs</span><span class="p">(</span><span class="n">dfs</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">res</span><span class="o">=</span><span class="p">(</span><span class="n">res</span><span class="o">+</span><span class="n">dfs</span><span class="p">(</span><span class="n">dfs</span><span class="p">,</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">%</span><span class="n">mod</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">res</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">};</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">dfs</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">);</span>
+<span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+<span class="err"> </span> <span class="err"> </span> <span class="k">const</span> <span class="kt">int</span> <span class="n">mod</span><span class="o">=</span><span class="mf">1e9</span><span class="o">+</span><span class="mi">7</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">int</span> <span class="n">numDistinct</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">,</span> <span class="n">string</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">(),</span><span class="n">m</span><span class="o">=</span><span class="n">t</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">));</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="p">]){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="mi">1LL</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">f</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span><span class="o">%</span><span class="n">mod</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="n">f</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="n">m</span><span class="p">];</span>
+<span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+<span class="nl">public:</span>
+<span class="err"> </span> <span class="err"> </span> <span class="k">const</span> <span class="kt">int</span> <span class="n">mod</span><span class="o">=</span><span class="mf">1e9</span><span class="o">+</span><span class="mi">7</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="kt">int</span> <span class="n">numDistinct</span><span class="p">(</span><span class="n">string</span> <span class="n">s</span><span class="p">,</span> <span class="n">string</span> <span class="n">t</span><span class="p">)</span> <span class="p">{</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="n">s</span><span class="p">.</span><span class="n">length</span><span class="p">(),</span><span class="n">m</span><span class="o">=</span><span class="n">t</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">f</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">f</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">--</span><span class="p">){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">if</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="p">]){</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="n">f</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="mi">1LL</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">f</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">%</span><span class="n">mod</span><span class="p">;</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="err"> </span> <span class="k">return</span> <span class="n">f</span><span class="p">[</span><span class="n">m</span><span class="p">];</span>
+<span class="err"> </span> <span class="err"> </span> <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>]]></content><author><name>yfsun2</name></author><category term="题解" /><category term="动态规划" /><category term="记忆化搜索" /><summary type="html"><![CDATA[题目链接 一.记忆化搜索 正序版 状态定义：定义$dfs(i,j)$表示$s[0:i]$的子序列出现$t[0:j]$的个数.]]></summary></entry><entry><title type="html">Some articles are just so long they deserve a really long title to see if things will break well</title><link href="/jekyll-theme-yat/misc/2016/05/20/super-long-article.html" rel="alternate" type="text/html" title="Some articles are just so long they deserve a really long title to see if things will break well" /><published>2016-05-20T00:00:00+00:00</published><updated>2016-05-20T00:00:00+00:00</updated><id>/jekyll-theme-yat/misc/2016/05/20/super-long-article</id><content type="html" xml:base="/jekyll-theme-yat/misc/2016/05/20/super-long-article.html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>]]></content><author><name>yfsun2</name></author><category term="misc" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.]]></summary></entry><entry><title type="html">Another test markdown</title><link href="/jekyll-theme-yat/markdown/2016/01/01/another-test-markdown.html" rel="alternate" type="text/html" title="Another test markdown" /><published>2016-01-01T00:00:00+00:00</published><updated>2016-01-01T00:00:00+00:00</updated><id>/jekyll-theme-yat/markdown/2016/01/01/another-test-markdown</id><content type="html" xml:base="/jekyll-theme-yat/markdown/2016/01/01/another-test-markdown.html"><![CDATA[<p>Put the math expression within <span>$</span>…$:</p>
+
+<p>\(\LaTeX{}\)</p>
+
+<p>$\Pi$</p>
+
+<p>$ a * b = c ^ b $</p>
+
+<p>$ 2^{\frac{n-1}{3}} $</p>
+
+<p>$ \int_a^b f(x)\,dx. $</p>
+
+<p>\( \int_a^b f(x)\,dx. \)</p>
+
+\[\begin{cases}
+\text{if true}\ foo \\
+\text{if false}\ bar
+\end{cases}\]
+
+<table>
+  <tbody>
+    <tr>
+      <td>$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )</td>
+      <td>\phi _i^\sigma ({\bf{r}})</td>
+      <td>^2} $</td>
+    </tr>
+  </tbody>
+</table>
+
+\[\rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )|\phi _i^\sigma ({\bf{r}})|^2}\]
+
+<p>Here is a liquid filter.</p>
+
+<p>`escape inline code`<br />
+<code class="language-plaintext highlighter-rouge">inline code</code><br />
+Here is a <strong>capture block</strong>.</p>
+
+<p>100 / 3 = 33</p>
+
+<p>:+1:
+:bolivia:</p>
+
+<p>\1. 21312<br />
+\2. 21312<br />
+\4. 4214</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="n">networkx</span> <span class="k">as</span> <span class="n">nx</span>
+<span class="kn">from</span> <span class="n">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+
+<span class="n">diagrams</span> <span class="o">=</span> <span class="nf">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+<span class="n">particle_counts</span> <span class="o">=</span> <span class="nf">defaultdict</span><span class="p">(</span><span class="n">Counter</span><span class="p">)</span>
+
+<span class="nf">for </span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">),</span> <span class="n">neighbors</span> <span class="ow">in</span> <span class="n">common_neighbors</span><span class="p">.</span><span class="nf">items</span><span class="p">():</span>
+    <span class="c1"># Build up the graph of connections between the
+</span>    <span class="c1"># common neighbors of a and b.
+</span>    <span class="n">g</span> <span class="o">=</span> <span class="n">nx</span><span class="p">.</span><span class="nc">Graph</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">set</span><span class="p">(</span><span class="n">nl</span><span class="p">.</span><span class="n">point_indices</span><span class="p">[</span>
+            <span class="n">nl</span><span class="p">.</span><span class="n">query_point_indices</span> <span class="o">==</span> <span class="n">i</span><span class="p">]).</span><span class="nf">intersection</span><span class="p">(</span><span class="n">neighbors</span><span class="p">):</span>
+            <span class="n">g</span><span class="p">.</span><span class="nf">add_edge</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+
+    <span class="c1"># Define the identifiers for a CNA diagram:
+</span>    <span class="c1"># The first integer is 1 if the particles are bonded, otherwise 2
+</span>    <span class="c1"># The second integer is the number of shared neighbors
+</span>    <span class="c1"># The third integer is the number of bonds among shared neighbors
+</span>    <span class="c1"># The fourth integer is an index, just to ensure uniqueness of diagrams
+</span>    <span class="n">diagram_type</span> <span class="o">=</span> <span class="mi">2</span><span class="o">-</span><span class="nf">int</span><span class="p">(</span><span class="n">b</span> <span class="ow">in</span> <span class="n">nl</span><span class="p">.</span><span class="n">point_indices</span><span class="p">[</span><span class="n">nl</span><span class="p">.</span><span class="n">query_point_indices</span> <span class="o">==</span> <span class="n">a</span><span class="p">])</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="p">(</span><span class="n">diagram_type</span><span class="p">,</span> <span class="nf">len</span><span class="p">(</span><span class="n">neighbors</span><span class="p">),</span> <span class="n">g</span><span class="p">.</span><span class="nf">number_of_edges</span><span class="p">())</span>
+    <span class="c1"># If we've seen any neighborhood graphs with this signature,
+</span>    <span class="c1"># we explicitly check if the two graphs are identical to
+</span>    <span class="c1"># determine whether to save this one. Otherwise, we add
+</span>    <span class="c1"># the new graph immediately.
+</span>    <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">diagrams</span><span class="p">:</span>
+        <span class="n">isomorphs</span> <span class="o">=</span> <span class="p">[</span><span class="n">nx</span><span class="p">.</span><span class="nf">is_isomorphic</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">diagrams</span><span class="p">[</span><span class="n">key</span><span class="p">]]</span>
+        <span class="k">if</span> <span class="nf">any</span><span class="p">(</span><span class="n">isomorphs</span><span class="p">):</span>
+            <span class="n">idx</span> <span class="o">=</span> <span class="n">isomorphs</span><span class="p">.</span><span class="nf">index</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">diagrams</span><span class="p">[</span><span class="n">key</span><span class="p">].</span><span class="nf">append</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+            <span class="n">idx</span> <span class="o">=</span> <span class="n">diagrams</span><span class="p">[</span><span class="n">key</span><span class="p">].</span><span class="nf">index</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">diagrams</span><span class="p">[</span><span class="n">key</span><span class="p">].</span><span class="nf">append</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="n">diagrams</span><span class="p">[</span><span class="n">key</span><span class="p">].</span><span class="nf">index</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+    <span class="n">cna_signature</span> <span class="o">=</span> <span class="n">key</span> <span class="o">+</span> <span class="p">(</span><span class="n">idx</span><span class="p">,)</span>
+    <span class="n">particle_counts</span><span class="p">[</span><span class="n">a</span><span class="p">].</span><span class="nf">update</span><span class="p">([</span><span class="n">cna_signature</span><span class="p">])</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">insert</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">key</span> <span class="o">==</span> <span class="sc">'\0'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">finish</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="o">*</span><span class="n">key</span> <span class="o">-</span> <span class="sc">'A'</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">next</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+            <span class="n">next</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Trie</span><span class="p">();</span>
+        <span class="n">next</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">insert</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">p</span> <span class="s2">":+1:"</span>
+</code></pre></div></div>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gi">+        'user_exists' =&gt; 'SELECT EXISTS(SELECT 1 FROM table WHERE username = (:username || \'@sample'))',
++        'get_users' =&gt; 'SELECT split_part(username, \'@\', 1) FROM table WHERE (username ILIKE :search) OR (name ILIKE :search)',
++        'get_password_hash_for_user' =&gt; 'SELECT split_part(password, \'{CRYPT}\', 2) FROM table WHERE username = (:username || \'@sample\')',
++        'set_password_hash_for_user' =&gt; 'UPDATE table SET password =  \'{CRYPT}\' || :new_password_hash WHERE username = (:username || \'@sample\')',
+</span></code></pre></div></div>
+
+<p>Reload the Nginx:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span><span class="nb">sudo </span>nginx <span class="nt">-s</span> reload
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>:</th>
+      <th>:                  :</th>
+      <th>: \(O_3 + C_2H_2 \rightarrow\)         :</th>
+      <th> </th>
+      <th> </th>
+      <th>:  \(O_3 + C_2H_4 \rightarrow\) :</th>
+      <th> </th>
+      <th> </th>
+      <th>:       :</th>
+    </tr>
+    <tr>
+      <th>:  ^^ Method            :</th>
+      <th>^^ \(\lambda^a\)</th>
+      <th>vdW</th>
+      <th>TS</th>
+      <th>cycloadd.</th>
+      <th>vdW</th>
+      <th>TS</th>
+      <th>cycloadd.</th>
+      <th>^^ MAE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\lambda\)-tPBE</td>
+      <td>0.20</td>
+      <td>-0.40</td>
+      <td>7.69</td>
+      <td>-68.00</td>
+      <td>-1.86</td>
+      <td>4.87</td>
+      <td>-57.57</td>
+      <td>1.29</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>MC1H-PBE \(^b\)</td>
+      <td>0.25</td>
+      <td>-1.08</td>
+      <td>3.66</td>
+      <td>-70.97</td>
+      <td>-1.25</td>
+      <td>0.13</td>
+      <td>-61.26</td>
+      <td>3.35</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Reference values \(^c\)</td>
+      <td>———</td>
+      <td>-1.90</td>
+      <td>7.74</td>
+      <td>-63.80</td>
+      <td>-1.94</td>
+      <td>3.37</td>
+      <td>-57.15</td>
+      <td>———</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>\(^a\) The optimal mixing parameter.\(\~\) \(^b\) From Ref. .\(\~\)  \(^c\) Best estimates from Ref. .</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tfoot>
+</table>
+
+<table class="custom-table">
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>spancell1</td>
+      <td> </td>
+      <td>spancell2</td>
+      <td> </td>
+      <td>cell</td>
+      <td>spancell3</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>^^ spancell1</td>
+      <td> </td>
+      <td>spancell2</td>
+      <td> </td>
+      <td>cell</td>
+      <td>spancell3</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+|:-----:|:-----:|:-----:|:-----:|
+| (0,0) | (0,1) | (0,2) | (0,3) |
+|     (1,0)    || ^^    | (1,3) |
+</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>(0,0)</td>
+      <td>(0,1)</td>
+      <td>(0,2)</td>
+      <td>(0,3)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(1,0)</td>
+      <td> </td>
+      <td>^^</td>
+      <td>(1,3)</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>(0,0)</td>
+      <td>(0,1)</td>
+      <td>(0,2)</td>
+      <td>(0,3)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(1,0)</td>
+      <td> </td>
+      <td> </td>
+      <td>(1,3)</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>(0,0)</td>
+      <td>(0,1)</td>
+      <td>(0,2)</td>
+      <td>(0,3)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>(1,0)</td>
+      <td> </td>
+      <td> </td>
+      <td>^^</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>(0,0)</td>
+      <td>(0,1)</td>
+      <td>(0,2)</td>
+      <td>(0,3)</td>
+      <td>\</td>
+    </tr>
+    <tr>
+      <td>(1,0)</td>
+      <td> </td>
+      <td> </td>
+      <td>^^</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="table">Table</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Stage</th>
+      <th style="text-align: right">Direct Products</th>
+      <th style="text-align: right">ATP Yields</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Glycolysis</td>
+      <td style="text-align: right">2 ATP</td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: right">^^</td>
+      <td style="text-align: right">2 NADH</td>
+      <td style="text-align: right">3–5 ATP</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Pyruvaye oxidation</td>
+      <td style="text-align: right">2 NADH</td>
+      <td style="text-align: right">5 ATP</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Citric acid cycle</td>
+      <td style="text-align: right">2 ATP</td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: right">^^</td>
+      <td style="text-align: right">6 NADH</td>
+      <td style="text-align: right">15 ATP</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">^^</td>
+      <td style="text-align: right">2 FADH</td>
+      <td style="text-align: right">3 ATP</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">30–32 ATP</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>:             Here’s a Inline Attribute Lists example                 :</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>:       :</td>
+      <td>:  &lt;div style="color: red;"&gt; &lt; Normal HTML Block &gt; &lt;/div&gt; :</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>Red    {: .cls style=”background: orange” }</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>^^ IALs</td>
+      <td>Green  {: #id style=”background: green; color: white” }</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>Blue   {: style=”background: blue; color: white” }</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>Black  {: color-style font-style}</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Heading</th>
+      <th>Column 1</th>
+      <th>Column 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1</td>
+      <td>Apple<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup></td>
+      <td><a href="https://www.youtube.com">Youtube (Home)</a></td>
+    </tr>
+    <tr>
+      <td>Row 2</td>
+      <td>Banana</td>
+      <td><a href="https://www.github.com">Github</a></td>
+    </tr>
+    <tr>
+      <td>Row 3 (merged)</td>
+      <td>Blueberry</td>
+      <td><a href="https://www.google.com">Google</a> *****  <a href="https://www.github.com">Github</a></td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td><a href="https://example.com">Plum</a></td>
+      <td>Raspberry <img src="https://jekyllrb.com/img/octojekyll.png" alt="example" title="An exemplary image" /></td>
+    </tr>
+    <tr>
+      <td>Row 4</td>
+      <td><a href="https://www.google.com">https://www.google.com</a></td>
+      <td><a href="https://www.google.com" target="_blank">test</a></td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>^^ <a href="https://www.youtube.com">https://www.youtube.com</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Row 5</td>
+      <td><a href="https://www.google.com">https://www.google.com</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://www.google.com">https://www.google.com</a></p>
+
+<p>Not in table: <code class="language-plaintext highlighter-rouge">&lt;Mail Gateway&gt;</code></p>
+
+<p>In table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Decision Point</th>
+      <th>Design Decision</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Authoritative DNS MX Record</td>
+      <td><code class="language-plaintext highlighter-rouge">&lt;Mail Gateway&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>9 * 9</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1 * 1 = 1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1 * 2 = 2</td>
+      <td>2 * 2 = 4</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1 * 3 = 3</td>
+      <td>2 * 3 = 6</td>
+      <td>3 * 3 = 9</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1 * 3 = 3</td>
+      <td>2 * 3 = 6</td>
+      <td>3 * 4 = 12</td>
+      <td>4 * 4 = 16</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="emoji">Emoji</h2>
+<p>:+1:</p>
+
+<h2 id="mathjax">Mathjax</h2>
+
+<p>$\LaTeX{}$</p>
+
+<h2 id="plantuml">PlantUML</h2>
+
+<p>@startuml
+Bob -&gt; Alice : hello
+@enduml</p>
+
+<h2 id="mermaid">Mermaid</h2>
+
+<pre><code class="language-mermaid!">graph LR
+  concurrent.futures ---&gt;| on top of | threading
+  concurrent.futures ---&gt;| on top of | multiprocessing
+  threading ---&gt;| on top of | \_thread
+  click concurrent.futures "https://docs.python.org/3.9/library/concurrent.futures.html" _blank
+</code></pre>
+
+<h2 id="video">Video</h2>
+
+<p><img src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" alt="Flower" /></p>
+
+<p><img src="//www.youtube.com/watch?v=Ptk_1Dc2iPY" alt="" /></p>
+
+<p><img src="https://avatars3.githubusercontent.com/hubot?v=3&amp;s=40" alt="" /></p>
+
+<p><a href="//www.youtube.com/watch?v=Ptk_1Dc2iPY">[video link]</a></p>
+
+<h2 id="audio">Audio</h2>
+
+<p><a href="https://hpr.dogphilosophy.net/test/">HTML5 Audio Formats Test</a></p>
+
+<p>Opus Audio (“.opus”):</p>
+
+<p><img src="https://hpr.dogphilosophy.net/test/opus.opus" alt="" /></p>
+
+<p>“MP3” file (“.mp3”) :</p>
+
+<p><img src="https://hpr.dogphilosophy.net/test/mp3.mp3" alt="" /></p>
+
+<p>WebM Audio (“.weba”):</p>
+
+<p><img src="https://hpr.dogphilosophy.net/test/weba.weba" alt="" /></p>
+
+<p>WebMv2 Audio (“.webm”):</p>
+
+<p><img src="https://hpr.dogphilosophy.net/test/webmv2.webm" alt="" /></p>
+
+<p>Ogg Vorbis (“.ogg”) :</p>
+
+<p><img src="https://hpr.dogphilosophy.net/test/ogg.ogg" alt="" /></p>
+
+<p>“wave” file(“.wav”) :</p>
+
+<p><img src="https://hpr.dogphilosophy.net/test/wav.wav" alt="" /></p>
+
+<p>FLAC file (“.flac”) :</p>
+
+<p><img src="https://hpr.dogphilosophy.net/test/flac.flac" alt="" /></p>
+
+<p>CAF file (“.caf”) :</p>
+
+<p><img src="https://hpr.dogphilosophy.net/test/cafopus.caf" alt="" /></p>
+
+<p>Spotify Podcast:</p>
+
+<p><img src="https://open.spotify.com/episode/2sXXGexCXPhGsdf9l99Q73?si=717c6671590745b3" alt="" /></p>
+
+<h2 id="special-media-links">Special media links</h2>
+
+<p>Local video file (“.webm”):</p>
+
+<p><img src="/jekyll-theme-yat/assets/videos/devstories.webm" alt="" /></p>
+
+<p>Video with custom thumbnail:</p>
+
+<p><a href="https://www.youtube.com/watch?v=kCHGDRHZ4eU"><img src="https://i.imgur.com/bc9HOJU.png" alt="w:1100" /></a></p>
+
+<p>Tips:</p>
+<ul>
+  <li>Use pipes (<code class="language-plaintext highlighter-rouge">|</code>) to delineate columns, and dashes to delineate the header row from the rest of the table.</li>
+  <li>Spacing doesn’t matter to the markdown processor, any extra white space is removed, but it can really help with readability.
+The two markdown examples below both create this table.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Use pipes <code class="language-plaintext highlighter-rouge">(</code></td>
+      <td><code class="language-plaintext highlighter-rouge">)</code> to delineate columns, and dashes to delineate the header row from the rest of the table.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Footnote <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>yfsun2</name></author><category term="markdown" /><category term="test" /><summary type="html"><![CDATA[Put the math expression within $…$:]]></summary></entry><entry><title type="html">Test markdown</title><link href="/jekyll-theme-yat/markdown/2015/02/28/test-markdown.html" rel="alternate" type="text/html" title="Test markdown" /><published>2015-02-28T00:00:00+00:00</published><updated>2015-02-28T00:00:00+00:00</updated><id>/jekyll-theme-yat/markdown/2015/02/28/test-markdown</id><content type="html" xml:base="/jekyll-theme-yat/markdown/2015/02/28/test-markdown.html"><![CDATA[<p>You can write regular <a href="https://markdowntutorial.com/">markdown</a> here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to <a href="http://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
+
+<p><strong>Here is some bold text</strong></p>
+
+<h2 id="here-is-a-secondary-heading">Here is a secondary heading</h2>
+
+<p>Here’s a useless table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Number</th>
+      <th style="text-align: left">Next number</th>
+      <th style="text-align: left">Previous number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Five</td>
+      <td style="text-align: left">Six</td>
+      <td style="text-align: left">Four</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ten</td>
+      <td style="text-align: left">Eleven</td>
+      <td style="text-align: left">Nine</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Seven</td>
+      <td style="text-align: left">Eight</td>
+      <td style="text-align: left">Six</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Two</td>
+      <td style="text-align: left">Three</td>
+      <td style="text-align: left">One</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>How about a yummy crepe?</p>
+
+<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" /></p>
+
+<p>It can also be centered!</p>
+
+<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" class="center-block" /></p>
+
+<p>Here’s a code chunk:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+</code></pre></div></div>
+
+<p>And here is the same code with syntax highlighting:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">foo</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>And here is the same code yet again but with line numbers:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nf">foo</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="boxes">Boxes</h2>
+<p>You can add notification, warning and error boxes like this:</p>
+
+<h3 id="notification">Notification</h3>
+
+<p class="box-note"><strong>Note:</strong> This is a notification box.</p>
+
+<h3 id="warning">Warning</h3>
+
+<p class="box-warning"><strong>Warning:</strong> This is a warning box.</p>
+
+<h3 id="error">Error</h3>
+
+<p class="box-error"><strong>Error:</strong> This is an error box.</p>
+
+<h3 id="emoji">Emoji</h3>
+
+<p>This single quote code <code class="language-plaintext highlighter-rouge">inet:email:message:to</code> will not be parsed to emoji icon
+:+1:.</p>]]></content><author><name>yfsun2</name></author><category term="markdown" /><category term="test" /><summary type="html"><![CDATA[You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll-theme-yat/jekyll/2015/01/01/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2015-01-01T00:00:00+00:00</published><updated>2015-01-01T00:00:00+00:00</updated><id>/jekyll-theme-yat/jekyll/2015/01/01/welcome-to-jekyll</id><content type="html" xml:base="/jekyll-theme-yat/jekyll/2015/01/01/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<h2 id="section-1">section 1</h2>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<h2 id="section-2">section 2</h2>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+<p>$ a * b = c ^ b $</p>
+
+<p>$ 2^{\frac{n-1}{3}} $</p>
+
+<p>$ \int_a^b f(x)\,dx. $</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// prints 'Hi, Tom' to STDOUT.</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="nc">Person</span><span class="p">(</span><span class="sh">"</span><span class="s">John</span><span class="sh">"</span><span class="p">,</span> <span class="mi">36</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">p1</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">p1</span><span class="p">.</span><span class="n">age</span><span class="p">)</span>
+</code></pre></div></div>]]></content><author><name>Jeffrey</name></author><category term="jekyll" /><category term="jekyll" /><category term="theme" /><category term="yat" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
