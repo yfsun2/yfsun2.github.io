@@ -17,6 +17,9 @@
     {%- include functions.html func='get_reading_time' -%}
     {% assign reading_time = return %}
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
+    <span id="busuanzi_container_page_pv" class="left-vsplit">
+    阅读量: <span id="busuanzi_value_page_pv"></span> 次
+    </span>
   </div>
 
   {%- if page.tags.size > 0 -%}
