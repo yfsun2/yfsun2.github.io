@@ -145,11 +145,11 @@ header_pages:
  - about.html
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "生命有限，知识无限，学习是无止境的旅程。"
+    subheading: "Life is limited, knowledge is infinite, learning is an endless journey."
+    banner: "default"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also

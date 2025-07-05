@@ -1,4 +1,5 @@
 home:
-  heading: "生命有限，知识无限，学习是无止境的旅程。"
-  subheading: "吾生也有涯，而知也无涯 ————《庄子》"
-  banner: "default"
+  heading: "Your awesome heading"
+  subheading: "Your awesome subheading"
+  banner: "Your image url"
+
