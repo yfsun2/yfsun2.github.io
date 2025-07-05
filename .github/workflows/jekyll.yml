@@ -46,10 +46,6 @@ jobs:
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-      - name: Replace MathJax URLs with faster CDNs
-        run: |
-         find ./_site -type f -name "*.html" -exec sed -i 's|https://polyfill.io/v3/polyfill.min.js\?features=es6|https://cdn.bootcdn.net/ajax/libs/js-polyfills/0.1.43/polyfill.min.js?features=es6|g' {} +
-         find ./_site -type f -name "*.html" -exec sed -i 's|https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js|https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js|g' {} +
         env:
           JEKYLL_ENV: production
       - name: Upload artifact

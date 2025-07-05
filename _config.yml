@@ -235,7 +235,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-spaceship
+#  - jekyll-spaceship
 
 #jekyll-spaceship:  # 插件名（常见为 jekyll-spaceship 或 mathjax-processor）
 #  math-processor:
