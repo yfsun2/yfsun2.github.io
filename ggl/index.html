@@ -6,11 +6,11 @@
 <meta property="og:description" content="刮刮乐中奖查询              * {             margin: 0;             padding: 0;             box-sizing: border-box;             font-family: &#39;Microsoft YaHei&#39;, sans-serif;         }">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.yfsun2.com/images/avatar.jpg">
-<meta property="article:published_time" content="2026-02-26T04:41:16.055Z">
-<meta property="article:modified_time" content="2026-02-26T04:41:16.055Z">
+<meta property="article:published_time" content="2026-03-19T12:49:35.724Z">
+<meta property="article:modified_time" content="2026-03-19T12:49:35.724Z">
 <meta property="article:author" content="yfsun2">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.yfsun2.com/images/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/images/syf.png"><link rel="canonical" href="https://blog.yfsun2.com/ggl/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+<meta name="twitter:image" content="https://blog.yfsun2.com/images/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/images/syf.png"><link rel="canonical" href="https://blog.yfsun2.com/ggl/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-0Hk5ubxGre"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
     (() => {
       
     const saveToLocal = {
@@ -352,10 +352,10 @@ btf.addGlobalFn('pjaxComplete', () => {
             <p>请输入刮刮乐代码查询中奖金额</p>
         </div>
 
-        <div class="tabs">
+        <!-- <div class="tabs">
             <div class="tab active" data-tab="sports">体彩刮刮乐</div>
             <div class="tab" data-tab="welfare">福彩刮刮乐</div>
-        </div>
+        </div> -->
 
         <div class="form-container">
             <div class="form-group">
@@ -392,8 +392,7 @@ btf.addGlobalFn('pjaxComplete', () => {
 
         // 模拟数据库 - 实际项目中应替换为后端API调用
         const lotteryDatabase = {
-            // 体彩数据
-            sports: {
+
                 "BRZ": { amount: 5, desc: "恭喜您中得体彩刮刮乐5元！" },
                 "CKV": { amount: 10, desc: "恭喜您中得体彩刮刮乐10元！" },
                 "HLT": { amount: 15, desc: "恭喜您中得体彩刮刮乐15元！" },
@@ -428,10 +427,8 @@ btf.addGlobalFn('pjaxComplete', () => {
                 "CEH": { amount: 1600, desc: "恭喜您中得体彩刮刮乐1600元！" },
                 "KMT": { amount: 2000, desc: "恭喜您中得体彩刮刮乐2000元！" },
                 "BLT": { amount: 3000, desc: "恭喜您中得体彩刮刮乐3000元！" },
-                "EMZ": { amount: 4000, desc: "恭喜您中得体彩刮刮乐4000元！" }
-            },
-            // 福彩数据
-            welfare: {
+                "EMZ": { amount: 4000, desc: "恭喜您中得体彩刮刮乐4000元！" },
+
                 "HQY": { amount: 2, desc: "恭喜您中得福彩刮刮乐2元！" },
                 "CTW": { amount: 5, desc: "恭喜您中得福彩刮刮乐5元！" },
                 "KSX": { amount: 10, desc: "恭喜您中得福彩刮刮乐10元！" },
@@ -462,11 +459,10 @@ btf.addGlobalFn('pjaxComplete', () => {
                 "DQU": { amount: 1000, desc: "恭喜您中得福彩刮刮乐1000元！" },
                 "EJO": { amount: 1500, desc: "恭喜您中得福彩刮刮乐1500元！" },
                 "BTV": { amount: 2000, desc: "恭喜您中得福彩刮刮乐2000元！" }
-            }
         };
 
         // 获取DOM元素
-        const tabs = document.querySelectorAll('.tab');
+        // const tabs = document.querySelectorAll('.tab');
         const lotteryCodeInput = document.getElementById('lottery-code');
         const queryBtn = document.getElementById('query-btn');
         const resultContainer = document.getElementById('result-container');
@@ -478,19 +474,19 @@ btf.addGlobalFn('pjaxComplete', () => {
         let currentLotteryType = 'sports';
 
         // 标签页切换
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // 移除所有active类
-                tabs.forEach(t => t.classList.remove('active'));
-                // 给当前点击的标签添加active类
-                tab.classList.add('active');
-                // 更新当前彩票类型
-                currentLotteryType = tab.dataset.tab;
-                // 清空输入框和结果
-                lotteryCodeInput.value = '';
-                resultContainer.style.display = 'none';
-            });
-        });
+        // tabs.forEach(tab => {
+        //     tab.addEventListener('click', () => {
+        //         // 移除所有active类
+        //         tabs.forEach(t => t.classList.remove('active'));
+        //         // 给当前点击的标签添加active类
+        //         tab.classList.add('active');
+        //         // 更新当前彩票类型
+        //         currentLotteryType = tab.dataset.tab;
+        //         // 清空输入框和结果
+        //         lotteryCodeInput.value = '';
+        //         resultContainer.style.display = 'none';
+        //     });
+        // });
 
         // 查询按钮点击事件
         queryBtn.addEventListener('click', () => {
@@ -504,15 +500,15 @@ btf.addGlobalFn('pjaxComplete', () => {
             }
 
             // 根据当前类型查询中奖信息
-            const lotteryData = lotteryDatabase[currentLotteryType];
-            const result = lotteryData[sortString(code)];
+            // const lotteryData = lotteryDatabase[currentLotteryType];
+            const result = lotteryDatabase[sortString(code)];
 
             if (result) {
                 // 中奖
                 showResult('success', '恭喜中奖！', `${result.amount} 元`, result.desc);
             } else {
                 // 未中奖或代码不存在
-                showResult('error', '查询结果', '', `未查询到【${code}】的中奖信息，您可能未中奖或输入的代码有误！`);
+                showResult('error', '查询结果', '', `未查询到【${code}】的中奖信息，您可能未中奖或输入的代码有误，也有可能中大奖了哦！`);
             }
         });
 
@@ -548,7 +544,7 @@ btf.addGlobalFn('pjaxComplete', () => {
           </div>
           <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%90%89%E4%BB%96%E8%B0%B1/"><span class="card-category-list-name">吉他谱</span><span class="card-category-list-count">14</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">学习教程</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">安装教程</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AF%AD%E6%B3%95/"><span class="card-category-list-name">语法</span><span class="card-category-list-count">2</span></a></li>
-          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/mysql/" style="font-size: 1.1em; color: #999">mysql</a> <a href="/tags/%E6%95%85%E6%B9%98%E9%A3%8E/" style="font-size: 1.1em; color: #999">故湘风</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/%E6%88%91%E4%BB%AC%E4%BF%A9/" style="font-size: 1.1em; color: #999">我们俩</a> <a href="/tags/%E9%9D%92%E5%9F%8E%E5%B1%B1%E4%B8%8B%E7%99%BD%E7%B4%A0%E8%B4%9E/" style="font-size: 1.1em; color: #999">青城山下白素贞</a> <a href="/tags/markdown/" style="font-size: 1.1em; color: #999">markdown</a> <a href="/tags/%E9%9D%92%E5%B1%B1%E7%BB%BF%E9%87%8E/" style="font-size: 1.1em; color: #999">青山绿野</a> <a href="/tags/sunflower/" style="font-size: 1.1em; color: #999">sunflower</a> <a href="/tags/%E5%8C%86%E5%8C%86%E9%82%A3%E5%B9%B4/" style="font-size: 1.1em; color: #999">匆匆那年</a> <a href="/tags/fight/" style="font-size: 1.1em; color: #999">fight</a> <a href="/tags/%E9%BC%93%E6%A5%BC/" style="font-size: 1.1em; color: #999">鼓楼</a> <a href="/tags/%E4%BC%A0%E5%A5%87/" style="font-size: 1.1em; color: #999">传奇</a> <a href="/tags/%E6%9E%AB/" style="font-size: 1.1em; color: #999">枫</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 1.1em; color: #999">随笔</a> <a href="/tags/%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D/" style="font-size: 1.1em; color: #999">美丽的神话</a> <a href="/tags/latex/" style="font-size: 1.1em; color: #999">latex</a> <a href="/tags/%E9%9B%AA%E8%90%BD%E4%B8%8B%E7%9A%84%E5%A3%B0%E9%9F%B3/" style="font-size: 1.1em; color: #999">雪落下的声音</a> <a href="/tags/%E5%A6%82%E6%84%BF/" style="font-size: 1.1em; color: #999">如愿</a> <a href="/tags/%E5%AE%89%E5%92%8C%E6%A1%A5/" style="font-size: 1.1em; color: #999">安和桥</a></div></div><div class="card-widget card-archives">
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E4%BC%A0%E5%A5%87/" style="font-size: 1.1em; color: #999">传奇</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 1.1em; color: #999">随笔</a> <a href="/tags/%E5%A6%82%E6%84%BF/" style="font-size: 1.1em; color: #999">如愿</a> <a href="/tags/mysql/" style="font-size: 1.1em; color: #999">mysql</a> <a href="/tags/sunflower/" style="font-size: 1.1em; color: #999">sunflower</a> <a href="/tags/%E9%9B%AA%E8%90%BD%E4%B8%8B%E7%9A%84%E5%A3%B0%E9%9F%B3/" style="font-size: 1.1em; color: #999">雪落下的声音</a> <a href="/tags/fight/" style="font-size: 1.1em; color: #999">fight</a> <a href="/tags/%E6%88%91%E4%BB%AC%E4%BF%A9/" style="font-size: 1.1em; color: #999">我们俩</a> <a href="/tags/latex/" style="font-size: 1.1em; color: #999">latex</a> <a href="/tags/%E9%9D%92%E5%B1%B1%E7%BB%BF%E9%87%8E/" style="font-size: 1.1em; color: #999">青山绿野</a> <a href="/tags/%E6%9E%AB/" style="font-size: 1.1em; color: #999">枫</a> <a href="/tags/%E9%9D%92%E5%9F%8E%E5%B1%B1%E4%B8%8B%E7%99%BD%E7%B4%A0%E8%B4%9E/" style="font-size: 1.1em; color: #999">青城山下白素贞</a> <a href="/tags/%E5%8C%86%E5%8C%86%E9%82%A3%E5%B9%B4/" style="font-size: 1.1em; color: #999">匆匆那年</a> <a href="/tags/%E7%BE%8E%E4%B8%BD%E7%9A%84%E7%A5%9E%E8%AF%9D/" style="font-size: 1.1em; color: #999">美丽的神话</a> <a href="/tags/git/" style="font-size: 1.1em; color: #999">git</a> <a href="/tags/%E6%95%85%E6%B9%98%E9%A3%8E/" style="font-size: 1.1em; color: #999">故湘风</a> <a href="/tags/markdown/" style="font-size: 1.1em; color: #999">markdown</a> <a href="/tags/%E5%AE%89%E5%92%8C%E6%A1%A5/" style="font-size: 1.1em; color: #999">安和桥</a> <a href="/tags/%E9%BC%93%E6%A5%BC/" style="font-size: 1.1em; color: #999">鼓楼</a></div></div><div class="card-widget card-archives">
     <div class="item-headline">
       <i class="fas fa-archive"></i>
       <span>归档</span>
@@ -603,7 +599,7 @@ btf.addGlobalFn('pjaxComplete', () => {
         </li>
       
     </ul>
-  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-03-19T10:47:55.263Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">使用文档</div><div class="footer-flex-content"><a href="https://butterfly.js.org/posts/21cfbf15/" target="_blank" title="🚀 快速开始">🚀 快速开始</a><a href="https://butterfly.js.org/posts/dc584b87/" target="_blank" title="📑 主题页面">📑 主题页面</a><a href="https://butterfly.js.org/posts/4aa8abbe/" target="_blank" title="📌 主题配置">📌 主题配置</a><a href="https://butterfly.js.org/posts/ceeb73f/" target="_blank" title="⚔️ 标签外挂">⚔️ 标签外挂</a><a href="https://butterfly.js.org/posts/98d20436/" target="_blank" title="❓ 主题问答">❓ 主题问答</a><a href="https://butterfly.js.org/posts/4073eda/" target="_blank" title="⚡️ 进阶教程">⚡️ 进阶教程</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">其他</div><div class="footer-flex-content"><a href="/Gallery/" target="_blank" title="图库">图库</a><a href="/messageboard/" target="_blank" title="留言板">留言板</a><a href="/talking/" target="_blank" title="说说">说说</a><a href="/link/" target="_blank" title="友情链接">友情链接</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">框架</div><div class="footer-flex-content"><a href="https://hexo.io/zh-cn/" target="_blank" title="Hexo">Hexo</a><a href="https://butterfly.js.org/" target="_blank" title="Butterfly">Butterfly</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">赞助</div><div class="footer-flex-content"><div><img src='https://cdn.jsdelivr.net/gh/yfsun2/images@img/img/20260127184916285.jpg' alt='yfsun2' width='100px' height='100px'></div></div></div></div></div><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By yfsun2</span><span class="framework-info"><span class="footer-separator">|</span><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="/js/tw_cn.js?v=5.5.3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-03-19T13:03:37.003Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">使用文档</div><div class="footer-flex-content"><a href="https://butterfly.js.org/posts/21cfbf15/" target="_blank" title="🚀 快速开始">🚀 快速开始</a><a href="https://butterfly.js.org/posts/dc584b87/" target="_blank" title="📑 主题页面">📑 主题页面</a><a href="https://butterfly.js.org/posts/4aa8abbe/" target="_blank" title="📌 主题配置">📌 主题配置</a><a href="https://butterfly.js.org/posts/ceeb73f/" target="_blank" title="⚔️ 标签外挂">⚔️ 标签外挂</a><a href="https://butterfly.js.org/posts/98d20436/" target="_blank" title="❓ 主题问答">❓ 主题问答</a><a href="https://butterfly.js.org/posts/4073eda/" target="_blank" title="⚡️ 进阶教程">⚡️ 进阶教程</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">其他</div><div class="footer-flex-content"><a href="/Gallery/" target="_blank" title="图库">图库</a><a href="/messageboard/" target="_blank" title="留言板">留言板</a><a href="/talking/" target="_blank" title="说说">说说</a><a href="/link/" target="_blank" title="友情链接">友情链接</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">框架</div><div class="footer-flex-content"><a href="https://hexo.io/zh-cn/" target="_blank" title="Hexo">Hexo</a><a href="https://butterfly.js.org/" target="_blank" title="Butterfly">Butterfly</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">赞助</div><div class="footer-flex-content"><div><img src='https://cdn.jsdelivr.net/gh/yfsun2/images@img/img/20260127184916285.jpg' alt='yfsun2' width='100px' height='100px'></div></div></div></div></div><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By yfsun2</span><span class="framework-info"><span class="footer-separator">|</span><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="/js/tw_cn.js?v=5.5.3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
   const loadMathjax = () => {
     if (!window.MathJax) {
       window.MathJax = {
