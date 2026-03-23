@@ -21,7 +21,7 @@
 
 /* 文章列表容器 */
 .guitar-list {
-    width: 900px;
+    width: 800px;
     list-style: none;
     padding: 0;
     margin: 2rem 0;
@@ -32,7 +32,6 @@
 
 /* 卡片项 */
 .guitar-list li {
-
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -99,7 +98,26 @@
     margin-top: 2rem;
 }
 
-/* 移动端适配 */
+/* ========== 响应式增强 ========== */
+/* 平板设备 (最大宽度 768px) - 渐进适配 */
+@media (max-width: 768px) {
+    .guitar-list {
+        width: 100%;          /* 宽度自适应父容器 */
+        margin: 1.5rem 0;
+        gap: 1rem;
+    }
+
+    .guitar-list li {
+        padding: 1rem 1.25rem;
+    }
+
+    .guitar-title {
+        font-size: 1.85rem;
+        margin: 1.25rem 0 1.5rem;
+    }
+}
+
+/* 手机设备 (最大宽度 640px) - 精细化调整 */
 @media (max-width: 640px) {
     .guitar-content {
         padding: 0 16px;
@@ -108,12 +126,20 @@
     .guitar-title {
         font-size: 1.75rem;
         margin: 1rem 0 1.5rem;
+        border-bottom-width: 2px;  /* 更细的分割线，视觉更轻量 */
+    }
+
+    .guitar-list {
+        width: 100%;          /* 关键修复：防止横向溢出 */
+        margin: 1rem 0;
+        gap: 0.875rem;        /* 卡片间距略减，适合紧凑屏幕 */
     }
 
     .guitar-list li {
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem 1.25rem;
+        border-radius: 14px;  /* 手机端圆角微调 */
     }
 
     .guitar-list a {
@@ -122,13 +148,53 @@
     }
 
     .guitar-list time {
-        white-space: normal;
+        white-space: normal;   /* 允许日期换行，避免挤压 */
         align-self: flex-start;
         font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    /* 空状态提示手机端优化 */
+    .guitar-content p:only-child {
+        padding: 2rem 1rem;
+        font-size: 0.95rem;
+        margin-top: 1rem;
     }
 }
 
-/* 可选：添加平滑滚动与焦点样式 */
+/* 超小手机 (最大宽度 480px) - 极致紧凑 */
+@media (max-width: 480px) {
+    .guitar-content {
+        padding: 0 12px;
+    }
+
+    .guitar-title {
+        font-size: 1.5rem;
+        margin: 0.75rem 0 1.25rem;
+    }
+
+    .guitar-list {
+        gap: 0.75rem;
+        margin: 0.75rem 0;
+    }
+
+    .guitar-list li {
+        padding: 0.875rem 1rem;
+        border-radius: 12px;
+    }
+
+    .guitar-list a {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .guitar-list time {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.4rem;
+    }
+}
+
+/* 可选：平滑滚动与焦点样式（全局保留） */
 .guitar-list a:focus-visible {
     outline: 2px solid #0969da;
     outline-offset: 2px;
