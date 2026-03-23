@@ -1,0 +1,136 @@
+/* 文章内容区容器 */
+.guitar-content {
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    color: #1f2d3d;
+}
+
+/* 页面主标题 */
+.guitar-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.5rem 0 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #e2e8f0;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+/* 文章列表容器 */
+.guitar-list {
+    width: 900px;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;  /* 卡片间距 */
+}
+
+/* 卡片项 */
+.guitar-list li {
+
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s ease;
+    border: 1px solid #eef2f8;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.guitar-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.12);
+    border-color: #cbd5e1;
+    background-color: #fefefe;
+}
+
+/* 文章标题链接 */
+.guitar-list a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e466e;
+    text-decoration: none;
+    transition: color 0.2s;
+    word-break: break-word;
+    flex: 1;
+}
+
+.guitar-list a:hover {
+    color: #0969da;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* 发布日期样式 */
+.guitar-list time {
+    font-size: 0.85rem;
+    font-family: 'SF Mono', 'Menlo', monospace;
+    color: #5b6e8c;
+    background-color: #f1f5f9;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.guitar-list li:hover time {
+    background-color: #e6edf6;
+}
+
+/* 空状态提示 */
+.guitar-content p:only-child {
+    text-align: center;
+    background-color: #f8fafc;
+    border-radius: 24px;
+    padding: 2.5rem 1.5rem;
+    color: #4a627a;
+    font-size: 1rem;
+    border: 1px dashed #cbd5e1;
+    margin-top: 2rem;
+}
+
+/* 移动端适配 */
+@media (max-width: 640px) {
+    .guitar-content {
+        padding: 0 16px;
+    }
+
+    .guitar-title {
+        font-size: 1.75rem;
+        margin: 1rem 0 1.5rem;
+    }
+
+    .guitar-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.25rem;
+    }
+
+    .guitar-list a {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .guitar-list time {
+        white-space: normal;
+        align-self: flex-start;
+        font-size: 0.75rem;
+    }
+}
+
+/* 可选：添加平滑滚动与焦点样式 */
+.guitar-list a:focus-visible {
+    outline: 2px solid #0969da;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
