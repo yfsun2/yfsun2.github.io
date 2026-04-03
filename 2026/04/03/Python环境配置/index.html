@@ -1,0 +1,550 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Python环境配置 | yfsun2的个人博客</title><meta name="author" content="yfsun2"><meta name="copyright" content="yfsun2"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Python环境配置一、Anaconda 安装教程（Windows&#x2F;Mac&#x2F;Linux 通用）Anaconda 是数据科学领域常用的环境管理工具，包含 Conda 包管理器、Python 解释器及大量预装科学计算库，推荐新手直接安装完整版（而非 Miniconda）。 1. 下载安装包 官网地址：Anaconda 官方下载  版本选择：根据操作系统（Windows&#x2F;Mac&#x2F;Linux）和系统位数（">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python环境配置">
+<meta property="og:url" content="https://blog.yfsun2.com/2026/04/03/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:site_name" content="yfsun2的个人博客">
+<meta property="og:description" content="Python环境配置一、Anaconda 安装教程（Windows&#x2F;Mac&#x2F;Linux 通用）Anaconda 是数据科学领域常用的环境管理工具，包含 Conda 包管理器、Python 解释器及大量预装科学计算库，推荐新手直接安装完整版（而非 Miniconda）。 1. 下载安装包 官网地址：Anaconda 官方下载  版本选择：根据操作系统（Windows&#x2F;Mac&#x2F;Linux）和系统位数（">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.yfsun2.com/images/avatar.jpg">
+<meta property="article:published_time" content="2026-04-03T12:02:36.000Z">
+<meta property="article:modified_time" content="2026-04-03T12:41:35.765Z">
+<meta property="article:author" content="yfsun2">
+<meta property="article:tag" content="Anaconda">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.yfsun2.com/images/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Python环境配置",
+  "url": "https://blog.yfsun2.com/2026/04/03/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/",
+  "image": "https://blog.yfsun2.com/images/avatar.jpg",
+  "datePublished": "2026-04-03T12:02:36.000Z",
+  "dateModified": "2026-04-03T12:41:35.765Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "yfsun2",
+      "url": "https://blog.yfsun2.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/images/syf.png"><link rel="canonical" href="https://blog.yfsun2.com/2026/04/03/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-0Hk5ubxGre"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5bd1eddb888c613d21669f1c102e8ce2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"NA35J2H9EZ","apiKey":"711ce70d63121d7f6d8409113af7c7a6","indexName":"my-hexo-blog","hitsPerPage":6,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，耗时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python环境配置',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/guitar/"><i class="fa-fw fas fa-guitar"></i><span> 吉他谱</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/dgg/"><i class="fa-fw fas fa-ticket"></i><span> 刮刮乐</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/images/syf.png" alt="Logo"><span class="site-name">yfsun2的个人博客</span></a><a class="nav-page-title" href="/"><span class="site-name">Python环境配置</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/guitar/"><i class="fa-fw fas fa-guitar"></i><span> 吉他谱</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/dgg/"><i class="fa-fw fas fa-ticket"></i><span> 刮刮乐</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Python环境配置</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-04-03T12:02:36.000Z" title="发表于 2026-04-03 20:02:36">2026-04-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-04-03T12:41:35.765Z" title="更新于 2026-04-03 20:41:35">2026-04-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">安装教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="Python环境配置"><a href="#Python环境配置" class="headerlink" title="Python环境配置"></a>Python环境配置</h1><h3 id="一、Anaconda-安装教程（Windows-Mac-Linux-通用）"><a href="#一、Anaconda-安装教程（Windows-Mac-Linux-通用）" class="headerlink" title="一、Anaconda 安装教程（Windows/Mac/Linux 通用）"></a>一、Anaconda 安装教程（Windows/Mac/Linux 通用）</h3><p>Anaconda 是数据科学领域常用的环境管理工具，包含 Conda 包管理器、Python 解释器及大量预装科学计算库，推荐新手直接安装完整版（而非 Miniconda）。</p>
+<h4 id="1-下载安装包"><a href="#1-下载安装包" class="headerlink" title="1. 下载安装包"></a>1. 下载安装包</h4><ul>
+<li><p>官网地址：<a target="_blank" rel="noopener" href="https://www.anaconda.com/products/distribution#download-section">An</a><a target="_blank" rel="noopener" href="https://www.anaconda.com/products/distribution#download-section">aco</a><a target="_blank" rel="noopener" href="https://www.anaconda.com/products/distribution#download-section">nda</a><a target="_blank" rel="noopener" href="https://www.anaconda.com/products/distribution#download-section"> 官方下载</a></p>
+</li>
+<li><p>版本选择：根据操作系统（Windows/Mac/Linux）和系统位数（32/64 位）选择对应安装包（建议选 Python 3.9+ 版本，兼容性更强）</p>
+</li>
+<li><p>国内镜像（推荐，下载更快）：<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">清华大</a><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">学开源镜像</a><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">站</a></p>
+</li>
+</ul>
+<h4 id="2-安装步骤（以-Windows-为例，Mac-Linux-类似）"><a href="#2-安装步骤（以-Windows-为例，Mac-Linux-类似）" class="headerlink" title="2. 安装步骤（以 Windows 为例，Mac/Linux 类似）"></a>2. 安装步骤（以 Windows 为例，Mac/Linux 类似）</h4><ol>
+<li><p>双击安装包，点击「Next」→ 勾选「I Agree」</p>
+</li>
+<li><p>选择安装类型：</p>
+</li>
+</ol>
+<ul>
+<li><p>个人使用选「Just Me」（推荐，无需管理员权限）</p>
+</li>
+<li><p>多用户共享选「All Users」（需管理员权限）</p>
+</li>
+</ul>
+<ol>
+<li>选择安装路径：</li>
+</ol>
+<ul>
+<li>建议自定义路径（如 <code>D:\Anaconda3</code>），<strong>避免中文路径和空格</strong>（否则后续可能报错）</li>
+</ul>
+<ol>
+<li>高级选项（关键！）：</li>
+</ol>
+<ul>
+<li><p>勾选「Add Anaconda3 to my PATH environment variable」（自动配置环境变量，新手必选）</p>
+</li>
+<li><p>勾选「Register Anaconda3 as my default Python 3.9」（设为默认 Python 解释器）</p>
+</li>
+<li><p>点击「Install」，等待安装完成（约 5-10 分钟）</p>
+</li>
+</ul>
+<ol>
+<li>完成后取消勾选「Learn more about Anaconda Cloud」，点击「Finish」</li>
+</ol>
+<h4 id="3-验证安装"><a href="#3-验证安装" class="headerlink" title="3. 验证安装"></a>3. 验证安装</h4><ol>
+<li><p>打开终端（Windows：Anaconda Prompt；Mac/Linux：Terminal）</p>
+</li>
+<li><p>输入以下命令，若返回版本号则安装成功：</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda --version  # 查看 conda 版本</span><br><span class="line"></span><br><span class="line">python --version  # 查看 Python 版本</span><br></pre></td></tr></table></figure>
+<h3 id="二、pip-源替换（加速包下载）"><a href="#二、pip-源替换（加速包下载）" class="headerlink" title="二、pip 源替换（加速包下载）"></a>二、pip 源替换（加速包下载）</h3><p>默认 pip 源在国外，下载速度慢，建议替换为国内镜像源（如清华、阿里云）。</p>
+<h4 id="1-临时使用（单次下载）"><a href="#1-临时使用（单次下载）" class="headerlink" title="1. 临时使用（单次下载）"></a>1. 临时使用（单次下载）</h4><p>安装包时通过 <code>-i</code> 参数指定源，示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+<h4 id="2-永久配置（推荐）"><a href="#2-永久配置（推荐）" class="headerlink" title="2. 永久配置（推荐）"></a>2. 永久配置（推荐）</h4><h5 id="Windows-系统"><a href="#Windows-系统" class="headerlink" title="Windows 系统"></a>Windows 系统</h5><ol>
+<li>打开 Anaconda Prompt，输入以下命令创建配置文件：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir %HOMEPATH%\pip  # 创建 pip 配置目录</span><br><span class="line"></span><br><span class="line">notepad %HOMEPATH%\pip\pip.conf  # 创建并编辑配置文件</span><br></pre></td></tr></table></figure>
+<ol>
+<li>在弹出的记事本中粘贴以下内容，保存关闭：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\[global]</span><br><span class="line"></span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"></span><br><span class="line">\[install]</span><br><span class="line"></span><br><span class="line">trusted-host = pypi.tuna.tsinghua.edu.cn</span><br></pre></td></tr></table></figure>
+<h5 id="Mac-Linux-系统"><a href="#Mac-Linux-系统" class="headerlink" title="Mac/Linux 系统"></a>Mac/Linux 系统</h5><ol>
+<li>打开终端，输入以下命令创建配置文件：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p \~/.pip  # 创建 pip 配置目录</span><br><span class="line"></span><br><span class="line">vi \~/.pip/pip.conf  # 用 vim 编辑配置文件</span><br></pre></td></tr></table></figure>
+<ol>
+<li>按 <code>i</code> 进入编辑模式，粘贴以下内容，按 <code>Esc</code> 后输入 <code>:wq</code> 保存退出：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\[global]</span><br><span class="line"></span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"></span><br><span class="line">\[install]</span><br><span class="line"></span><br><span class="line">trusted-host = pypi.tuna.tsinghua.edu.cn</span><br></pre></td></tr></table></figure>
+<h4 id="3-常用国内镜像源"><a href="#3-常用国内镜像源" class="headerlink" title="3. 常用国内镜像源"></a>3. 常用国内镜像源</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>镜像源名称</th>
+<th>镜像地址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>清华大学</td>
+<td><a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna</a><a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">.tsin</a><a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">ghua</a><a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">.edu</a><a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">.cn/sim</a><a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">ple</a></td>
+</tr>
+<tr>
+<td>阿里云</td>
+<td><a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/pypi/simple/">https://mirrors.aliy</a><a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/pypi/simple/">un.co</a><a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/pypi/simple/">m/pyp</a><a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/pypi/simple/">i/sim</a><a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/pypi/simple/">ple/</a></td>
+</tr>
+<tr>
+<td>豆瓣</td>
+<td><a target="_blank" rel="noopener" href="https://pypi.doubanio.com/simple/">https://pypi.dou</a><a target="_blank" rel="noopener" href="https://pypi.doubanio.com/simple/">banio</a><a target="_blank" rel="noopener" href="https://pypi.doubanio.com/simple/">.com/</a><a target="_blank" rel="noopener" href="https://pypi.doubanio.com/simple/">simpl</a><a target="_blank" rel="noopener" href="https://pypi.doubanio.com/simple/">e/</a></td>
+</tr>
+<tr>
+<td>中国科学技术大学</td>
+<td><a target="_blank" rel="noopener" href="https://pypi.mirrors.ustc.edu.cn/simple/">https://pypi.mirror</a><a target="_blank" rel="noopener" href="https://pypi.mirrors.ustc.edu.cn/simple/">s.ust</a><a target="_blank" rel="noopener" href="https://pypi.mirrors.ustc.edu.cn/simple/">c.edu</a><a target="_blank" rel="noopener" href="https://pypi.mirrors.ustc.edu.cn/simple/">.cn/s</a><a target="_blank" rel="noopener" href="https://pypi.mirrors.ustc.edu.cn/simple/">imple</a><a target="_blank" rel="noopener" href="https://pypi.mirrors.ustc.edu.cn/simple/">/</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="三、pip-cache-位置更改（释放-C-盘空间）"><a href="#三、pip-cache-位置更改（释放-C-盘空间）" class="headerlink" title="三、pip cache 位置更改（释放 C 盘空间）"></a>三、pip cache 位置更改（释放 C 盘空间）</h3><p>pip 会缓存下载的包文件，默认存放在系统盘（C 盘），可手动更改缓存目录。</p>
+<h4 id="1-查看当前缓存位置"><a href="#1-查看当前缓存位置" class="headerlink" title="1. 查看当前缓存位置"></a>1. 查看当前缓存位置</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip cache dir  # 输出当前缓存目录路径</span><br></pre></td></tr></table></figure>
+<h4 id="2-临时更改缓存位置（单次下载）"><a href="#2-临时更改缓存位置（单次下载）" class="headerlink" title="2. 临时更改缓存位置（单次下载）"></a>2. 临时更改缓存位置（单次下载）</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pandas --cache-dir D:\pip\_cache  # 指定缓存目录为 D 盘 pip\_cache 文件夹</span><br></pre></td></tr></table></figure>
+<h4 id="3-永久更改缓存位置"><a href="#3-永久更改缓存位置" class="headerlink" title="3. 永久更改缓存位置"></a>3. 永久更改缓存位置</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip config set global.cache-dir &quot;E:\pipcache&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="4-清理-pip-缓存"><a href="#4-清理-pip-缓存" class="headerlink" title="4. 清理 pip 缓存"></a>4. 清理 pip 缓存</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip cache purge  # 清空所有缓存</span><br><span class="line"></span><br><span class="line">pip cache remove numpy  # 只清理 numpy 包的缓存</span><br></pre></td></tr></table></figure>
+<h3 id="四、Conda-核心命令（环境与包管理）"><a href="#四、Conda-核心命令（环境与包管理）" class="headerlink" title="四、Conda 核心命令（环境与包管理）"></a>四、Conda 核心命令（环境与包管理）</h3><p>Conda 最强大的功能是<strong>隔离环境管理</strong>，可避免不同项目的依赖冲突。</p>
+<h4 id="1-环境管理"><a href="#1-环境管理" class="headerlink" title="1. 环境管理"></a>1. 环境管理</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>命令用途</th>
+<th>命令代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>创建新环境（指定 Python 版本）</td>
+<td><code>conda create -n env_name python=3.10</code> （env_name 为环境名）</td>
+</tr>
+<tr>
+<td>激活环境</td>
+<td>Windows：<code>conda activate env_name</code>；Mac/Linux：<code>source activate env_name</code></td>
+</tr>
+<tr>
+<td>退出环境</td>
+<td><code>conda deactivate</code></td>
+</tr>
+<tr>
+<td>查看所有环境</td>
+<td><code>conda env list</code> 或 <code>conda info --envs</code></td>
+</tr>
+<tr>
+<td>复制环境</td>
+<td><code>conda create -n new_env --clone old_env</code></td>
+</tr>
+<tr>
+<td>删除环境</td>
+<td><code>conda remove -n env_name --all</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="2-包管理（激活环境后使用）"><a href="#2-包管理（激活环境后使用）" class="headerlink" title="2. 包管理（激活环境后使用）"></a>2. 包管理（激活环境后使用）</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>命令用途</th>
+<th>命令代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>安装包</td>
+<td><code>conda install package_name</code> （如 <code>conda install pandas</code>）</td>
+</tr>
+<tr>
+<td>安装指定版本的包</td>
+<td><code>conda install package_name=1.5.3</code></td>
+</tr>
+<tr>
+<td>安装多个包</td>
+<td><code>conda install package1 package2 package3</code></td>
+</tr>
+<tr>
+<td>卸载包</td>
+<td><code>conda remove package_name</code></td>
+</tr>
+<tr>
+<td>更新包</td>
+<td><code>conda update package_name</code></td>
+</tr>
+<tr>
+<td>更新所有包</td>
+<td><code>conda update --all</code></td>
+</tr>
+<tr>
+<td>查看已安装的包</td>
+<td><code>conda list</code></td>
+</tr>
+<tr>
+<td>搜索可安装的包</td>
+<td><code>conda search package_name</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="3-Conda-源替换（加速-Conda-包下载）"><a href="#3-Conda-源替换（加速-Conda-包下载）" class="headerlink" title="3. Conda 源替换（加速 Conda 包下载）"></a>3. Conda 源替换（加速 Conda 包下载）</h4><p>默认 Conda 源在国外，可替换为清华镜像源：</p>
+<ol>
+<li>打开终端，输入以下命令添加清华源：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line"></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line"></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line"></span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/</span><br></pre></td></tr></table></figure>
+<ol>
+<li>设置搜索时显示通道地址：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --set show\_channel\_urls yes</span><br></pre></td></tr></table></figure>
+<ol>
+<li>查看当前配置的通道：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --show-sources</span><br></pre></td></tr></table></figure>
+<ol>
+<li>恢复默认源（如需）：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda config --remove-key channels</span><br></pre></td></tr></table></figure>
+<h3 id="五、requirements-txt-的使用（依赖批量管理）"><a href="#五、requirements-txt-的使用（依赖批量管理）" class="headerlink" title="五、requirements.txt 的使用（依赖批量管理）"></a>五、requirements.txt 的使用（依赖批量管理）</h3><p><code>requirements.txt</code> 是 Python 项目的依赖清单文件，可快速复现项目所需的包及版本，常用于项目分享和部署。</p>
+<h4 id="1-生成-requirements-txt-文件"><a href="#1-生成-requirements-txt-文件" class="headerlink" title="1. 生成 requirements.txt 文件"></a>1. 生成 requirements.txt 文件</h4><p>在项目根目录下打开终端（需激活对应 Conda 环境），输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\# 方法1：导出当前环境所有包（推荐，精准复现）</span><br><span class="line"></span><br><span class="line">pip freeze &gt; requirements.txt</span><br><span class="line"></span><br><span class="line">\# 方法2：只导出项目实际依赖的包（需先安装 pipreqs）</span><br><span class="line"></span><br><span class="line">pip install pipreqs</span><br><span class="line"></span><br><span class="line">pipreqs . --encoding=utf8  # 在当前目录生成，解决中文编码问题</span><br></pre></td></tr></table></figure>
+<h4 id="2-从-requirements-txt-安装依赖"><a href="#2-从-requirements-txt-安装依赖" class="headerlink" title="2. 从 requirements.txt 安装依赖"></a>2. 从 requirements.txt 安装依赖</h4><p>拿到别人的项目后，激活环境并执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt  # 按文件中的版本安装</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt --upgrade  # 安装时更新包到最新版本</span><br></pre></td></tr></table></figure>
+<h4 id="3-requirements-txt-格式说明"><a href="#3-requirements-txt-格式说明" class="headerlink" title="3. requirements.txt 格式说明"></a>3. requirements.txt 格式说明</h4><p>文件内容示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">numpy==1.23.5  # 指定版本（推荐，避免兼容性问题）</span><br><span class="line"></span><br><span class="line">pandas&gt;=1.5.0  # 最低版本要求</span><br><span class="line"></span><br><span class="line">matplotlib  # 不指定版本（安装最新版）</span><br><span class="line"></span><br><span class="line">requests\[security]  # 安装带额外依赖的包</span><br><span class="line"></span><br><span class="line">git+https://github.com/username/package.git  # 从 GitHub 安装</span><br></pre></td></tr></table></figure>
+<h4 id="4-常见问题"><a href="#4-常见问题" class="headerlink" title="4. 常见问题"></a>4. 常见问题</h4><ul>
+<li>安装失败：检查镜像源是否配置正确，或手动指定源安装：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+<ul>
+<li>版本冲突：删除 <code>requirements.txt</code> 中的版本号，或使用 Conda 安装冲突包：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install numpy pandas  # Conda 会自动解决版本冲突</span><br></pre></td></tr></table></figure>
+<h3 id="六、常见问题排查"><a href="#六、常见问题排查" class="headerlink" title="六、常见问题排查"></a>六、常见问题排查</h3><ol>
+<li><p><strong>Conda 命令找不到</strong>：未配置环境变量，重新安装并勾选「Add to PATH」，或手动添加环境变量（Anaconda 安装目录下的 <code>Scripts</code> 和 <code>bin</code> 文件夹）。</p>
+</li>
+<li><p><strong>包安装失败</strong>：优先用 Conda 安装（<code>conda install package</code>），若 Conda 无该包再用 pip；确保网络通畅，镜像源配置正确。</p>
+</li>
+<li><p><strong>环境激活失败</strong>：Windows 用 Anaconda Prompt 激活，Mac/Linux 检查环境变量配置，或重新创建环境。</p>
+</li>
+</ol>
+<blockquote>
+<p>（注：文档部分内容可能由 AI 生成）</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.yfsun2.com/">yfsun2</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.yfsun2.com/2026/04/03/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">https://blog.yfsun2.com/2026/04/03/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.yfsun2.com" target="_blank">yfsun2的个人博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/python/">python</a><a class="post-meta__tags" href="/tags/Anaconda/">Anaconda</a></div><div class="post-share"><div class="social-share" data-image="/images/avatar.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/03/31/%E4%BA%BA%E9%97%B4%E5%85%B1%E9%B8%A3/" title="人间共鸣"><img class="cover" src="/2026/03/31/%E4%BA%BA%E9%97%B4%E5%85%B1%E9%B8%A3/a.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">人间共鸣</div></div><div class="info-2"><div class="info-item-1"> </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">yfsun2</div><div class="author-info-description">输了你，赢了世界又如何</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yfsun2"><i class="fab fa-github"></i><span>关注我</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">Python环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81Anaconda-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%EF%BC%88Windows-Mac-Linux-%E9%80%9A%E7%94%A8%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">一、Anaconda 安装教程（Windows&#x2F;Mac&#x2F;Linux 通用）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%8C%85"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 下载安装包</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4%EF%BC%88%E4%BB%A5-Windows-%E4%B8%BA%E4%BE%8B%EF%BC%8CMac-Linux-%E7%B1%BB%E4%BC%BC%EF%BC%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 安装步骤（以 Windows 为例，Mac&#x2F;Linux 类似）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E9%AA%8C%E8%AF%81%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. 验证安装</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81pip-%E6%BA%90%E6%9B%BF%E6%8D%A2%EF%BC%88%E5%8A%A0%E9%80%9F%E5%8C%85%E4%B8%8B%E8%BD%BD%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">二、pip 源替换（加速包下载）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%B4%E6%97%B6%E4%BD%BF%E7%94%A8%EF%BC%88%E5%8D%95%E6%AC%A1%E4%B8%8B%E8%BD%BD%EF%BC%89"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 临时使用（单次下载）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%B0%B8%E4%B9%85%E9%85%8D%E7%BD%AE%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 永久配置（推荐）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Windows-%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">Windows 系统</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Mac-Linux-%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">Mac&#x2F;Linux 系统</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%B8%B8%E7%94%A8%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90"><span class="toc-number">1.2.3.</span> <span class="toc-text">3. 常用国内镜像源</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81pip-cache-%E4%BD%8D%E7%BD%AE%E6%9B%B4%E6%94%B9%EF%BC%88%E9%87%8A%E6%94%BE-C-%E7%9B%98%E7%A9%BA%E9%97%B4%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">三、pip cache 位置更改（释放 C 盘空间）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%BC%93%E5%AD%98%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.3.1.</span> <span class="toc-text">1. 查看当前缓存位置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%B4%E6%97%B6%E6%9B%B4%E6%94%B9%E7%BC%93%E5%AD%98%E4%BD%8D%E7%BD%AE%EF%BC%88%E5%8D%95%E6%AC%A1%E4%B8%8B%E8%BD%BD%EF%BC%89"><span class="toc-number">1.3.2.</span> <span class="toc-text">2. 临时更改缓存位置（单次下载）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E6%B0%B8%E4%B9%85%E6%9B%B4%E6%94%B9%E7%BC%93%E5%AD%98%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.3.3.</span> <span class="toc-text">3. 永久更改缓存位置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%B8%85%E7%90%86-pip-%E7%BC%93%E5%AD%98"><span class="toc-number">1.3.4.</span> <span class="toc-text">4. 清理 pip 缓存</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81Conda-%E6%A0%B8%E5%BF%83%E5%91%BD%E4%BB%A4%EF%BC%88%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%8C%85%E7%AE%A1%E7%90%86%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">四、Conda 核心命令（环境与包管理）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86"><span class="toc-number">1.4.1.</span> <span class="toc-text">1. 环境管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%8C%85%E7%AE%A1%E7%90%86%EF%BC%88%E6%BF%80%E6%B4%BB%E7%8E%AF%E5%A2%83%E5%90%8E%E4%BD%BF%E7%94%A8%EF%BC%89"><span class="toc-number">1.4.2.</span> <span class="toc-text">2. 包管理（激活环境后使用）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Conda-%E6%BA%90%E6%9B%BF%E6%8D%A2%EF%BC%88%E5%8A%A0%E9%80%9F-Conda-%E5%8C%85%E4%B8%8B%E8%BD%BD%EF%BC%89"><span class="toc-number">1.4.3.</span> <span class="toc-text">3. Conda 源替换（加速 Conda 包下载）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81requirements-txt-%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%88%E4%BE%9D%E8%B5%96%E6%89%B9%E9%87%8F%E7%AE%A1%E7%90%86%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">五、requirements.txt 的使用（依赖批量管理）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%94%9F%E6%88%90-requirements-txt-%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.1.</span> <span class="toc-text">1. 生成 requirements.txt 文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%BB%8E-requirements-txt-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-number">1.5.2.</span> <span class="toc-text">2. 从 requirements.txt 安装依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-requirements-txt-%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E"><span class="toc-number">1.5.3.</span> <span class="toc-text">3. requirements.txt 格式说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">1.5.4.</span> <span class="toc-text">4. 常见问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5"><span class="toc-number">1.6.</span> <span class="toc-text">六、常见问题排查</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/04/03/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="Python环境配置">Python环境配置</a><time datetime="2026-04-03T12:02:36.000Z" title="发表于 2026-04-03 20:02:36">2026-04-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/31/%E4%BA%BA%E9%97%B4%E5%85%B1%E9%B8%A3/" title="人间共鸣"><img src="/2026/03/31/%E4%BA%BA%E9%97%B4%E5%85%B1%E9%B8%A3/a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人间共鸣"/></a><div class="content"><a class="title" href="/2026/03/31/%E4%BA%BA%E9%97%B4%E5%85%B1%E9%B8%A3/" title="人间共鸣">人间共鸣</a><time datetime="2026-03-31T04:19:18.000Z" title="发表于 2026-03-31 12:19:18">2026-03-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/03/31/Spring%20Cloud%E5%85%A8%E8%A7%A3%E6%9E%90%EF%BC%9A%E4%BB%8E%E7%BB%84%E4%BB%B6%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E6%88%98%E8%90%BD%E5%9C%B0/" title="Spring Cloud全解析：从组件原理到实战落地">Spring Cloud全解析：从组件原理到实战落地</a><time datetime="2026-03-31T04:13:22.000Z" title="发表于 2026-03-31 12:13:22">2026-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/22/%E6%97%A0%E9%A2%98/" title="无题"><img src="/2026/03/22/%E6%97%A0%E9%A2%98/a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2026/03/22/%E6%97%A0%E9%A2%98/" title="无题">无题</a><time datetime="2026-03-22T15:29:28.000Z" title="发表于 2026-03-22 23:29:28">2026-03-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/17/fight/" title="fight"><img src="/2026/03/17/fight/a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="fight"/></a><div class="content"><a class="title" href="/2026/03/17/fight/" title="fight">fight</a><time datetime="2026-03-17T06:34:26.000Z" title="发表于 2026-03-17 14:34:26">2026-03-17</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">使用文档</div><div class="footer-flex-content"><a href="https://butterfly.js.org/posts/21cfbf15/" target="_blank" title="🚀 快速开始">🚀 快速开始</a><a href="https://butterfly.js.org/posts/dc584b87/" target="_blank" title="📑 主题页面">📑 主题页面</a><a href="https://butterfly.js.org/posts/4aa8abbe/" target="_blank" title="📌 主题配置">📌 主题配置</a><a href="https://butterfly.js.org/posts/ceeb73f/" target="_blank" title="⚔️ 标签外挂">⚔️ 标签外挂</a><a href="https://butterfly.js.org/posts/98d20436/" target="_blank" title="❓ 主题问答">❓ 主题问答</a><a href="https://butterfly.js.org/posts/4073eda/" target="_blank" title="⚡️ 进阶教程">⚡️ 进阶教程</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">其他</div><div class="footer-flex-content"><a href="/Gallery/" target="_blank" title="图库">图库</a><a href="/messageboard/" target="_blank" title="留言板">留言板</a><a href="/talking/" target="_blank" title="说说">说说</a><a href="/link/" target="_blank" title="友情链接">友情链接</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">框架</div><div class="footer-flex-content"><a href="https://hexo.io/zh-cn/" target="_blank" title="Hexo">Hexo</a><a href="https://butterfly.js.org/" target="_blank" title="Butterfly">Butterfly</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">赞助</div><div class="footer-flex-content"><div><img src='/images/donate.jpg' alt='yfsun2' width='100px' height='100px'></div></div></div></div></div><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By yfsun2</span><span class="framework-info"><span class="footer-separator">|</span><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div><div class="footer_custom_text"><span id="realtime_duration"></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="/js/tw_cn.js?v=5.5.3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'yfsun2/yfsun2.github.io',
+      'data-repo-id': 'R_kgDOQrdD3Q',
+      'data-category-id': 'DIC_kwDOQrdD3c4C0jy_',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script><script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/duration.min.js"></script><script src="/scripts/realtime.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div id="algolia-search-input"><div class="ais-SearchBox"><form class="ais-SearchBox-form" action="" role="search" novalidate=""><input class="ais-SearchBox-input" type="search" placeholder="搜索文章" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="512" aria-label="Search"/><button class="ais-SearchBox-submit" type="submit" title="Submit the search query" style="display:none;"><svg class="ais-SearchBox-submitIcon" width="10" height="10" viewBox="0 0 40 40" aria-hidden="true"><path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"></path></svg></button></form></div><hr/><div id="algolia-search-results"><div id="algolia-hits"><div id="algolia-hits-empty" style="display:none;"></div><div class="ais-Hits" style="display:none;"><ol class="ais-Hits-list"></ol></div></div><div class="ais-Pagination" id="algolia-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="algolia-info"><span class="ais-Stats-text"></span><a class="algolia-poweredBy" href="https://www.algolia.com/?utm_source=algoliasearch.js&amp;utm_medium=website&amp;utm_content=localhost&amp;utm_campaign=poweredby" target="_blank" aria-label="Search by Algolia" rel="noopener noreferrer"><svg class="ais-PoweredBy-logo" height="1.2em" viewBox="0 0 572 64" style="width: auto;"><path fill="#36395A" d="M16 48.3c-3.4 0-6.3-.6-8.7-1.7A12.4 12.4 0 0 1 1.9 42C.6 40 0 38 0 35.4h6.5a6.7 6.7 0 0 0 3.9 6c1.4.7 3.3 1.1 5.6 1.1 2.2 0 4-.3 5.4-1a7 7 0 0 0 3-2.4 6 6 0 0 0 1-3.4c0-1.5-.6-2.8-1.9-3.7-1.3-1-3.3-1.6-5.9-1.8l-4-.4c-3.7-.3-6.6-1.4-8.8-3.4a10 10 0 0 1-3.3-7.9c0-2.4.6-4.6 1.8-6.4a12 12 0 0 1 5-4.3c2.2-1 4.7-1.6 7.5-1.6s5.5.5 7.6 1.6a12 12 0 0 1 5 4.4c1.2 1.8 1.8 4 1.8 6.7h-6.5a6.4 6.4 0 0 0-3.5-5.9c-1-.6-2.6-1-4.4-1s-3.2.3-4.4 1c-1.1.6-2 1.4-2.6 2.4-.5 1-.8 2-.8 3.1a5 5 0 0 0 1.5 3.6c1 1 2.6 1.7 4.7 1.9l4 .3c2.8.2 5.2.8 7.2 1.8 2.1 1 3.7 2.2 4.9 3.8a9.7 9.7 0 0 1 1.7 5.8c0 2.5-.7 4.7-2 6.6a13 13 0 0 1-5.6 4.4c-2.4 1-5.2 1.6-8.4 1.6Zm35.6 0c-2.6 0-4.8-.4-6.7-1.3a13 13 0 0 1-4.7-3.5 17.1 17.1 0 0 1-3.6-10.4v-1c0-2 .3-3.8 1-5.6a13 13 0 0 1 7.3-8.3 15 15 0 0 1 6.3-1.4A13.2 13.2 0 0 1 64 24.3c1 2.2 1.6 4.6 1.6 7.2V34H39.4v-4.3h21.8l-1.8 2.2c0-2-.3-3.7-.9-5.1a7.3 7.3 0 0 0-2.7-3.4c-1.2-.7-2.7-1.1-4.6-1.1s-3.4.4-4.7 1.3a8 8 0 0 0-2.9 3.6c-.6 1.5-.9 3.3-.9 5.4 0 2 .3 3.7 1 5.3a7.9 7.9 0 0 0 2.8 3.7c1.3.8 3 1.3 5 1.3s3.8-.5 5.1-1.3c1.3-1 2.1-2 2.4-3.2h6a11.8 11.8 0 0 1-7 8.7 16 16 0 0 1-6.4 1.2ZM80 48c-2.2 0-4-.3-5.7-1a8.4 8.4 0 0 1-3.7-3.3 9.7 9.7 0 0 1-1.3-5.2c0-2 .5-3.8 1.5-5.2a9 9 0 0 1 4.3-3.1c1.8-.7 4-1 6.7-1H89v4.1h-7.5c-2 0-3.4.5-4.4 1.4-1 1-1.6 2.1-1.6 3.6s.5 2.7 1.6 3.6c1 1 2.5 1.4 4.4 1.4 1.1 0 2.2-.2 3.2-.7 1-.4 1.9-1 2.6-2 .6-1 1-2.4 1-4.2l1.7 2.1c-.2 2-.7 3.8-1.5 5.2a9 9 0 0 1-3.4 3.3 12 12 0 0 1-5.3 1Zm9.5-.7v-8.8h-1v-10c0-1.8-.5-3.2-1.4-4.1-1-1-2.4-1.4-4.2-1.4a142.9 142.9 0 0 0-10.2.4v-5.6a74.8 74.8 0 0 1 8.6-.4c3 0 5.5.4 7.5 1.2s3.4 2 4.4 3.6c1 1.7 1.4 4 1.4 6.7v18.4h-5Zm12.9 0V17.8h5v12.3h-.2c0-4.2 1-7.4 2.8-9.5a11 11 0 0 1 8.3-3.1h1v5.6h-2a9 9 0 0 0-6.3 2.2c-1.5 1.5-2.2 3.6-2.2 6.4v15.6h-6.4Zm34.4 1a15 15 0 0 1-6.6-1.3c-1.9-.9-3.4-2-4.7-3.5a15.5 15.5 0 0 1-2.7-5c-.6-1.7-1-3.6-1-5.4v-1c0-2 .4-3.8 1-5.6a15 15 0 0 1 2.8-4.9c1.3-1.5 2.8-2.6 4.6-3.5a16.4 16.4 0 0 1 13.3.2c2 1 3.5 2.3 4.8 4a12 12 0 0 1 2 6H144c-.2-1.6-1-3-2.2-4.1a7.5 7.5 0 0 0-5.2-1.7 8 8 0 0 0-4.7 1.3 8 8 0 0 0-2.8 3.6 13.8 13.8 0 0 0 0 10.3c.6 1.5 1.5 2.7 2.8 3.6s2.8 1.3 4.8 1.3c1.5 0 2.7-.2 3.8-.8a7 7 0 0 0 2.6-2c.7-1 1-2 1.2-3.2h6.2a11 11 0 0 1-2 6.2 15.1 15.1 0 0 1-11.8 5.5Zm19.7-1v-40h6.4V31h-1.3c0-3 .4-5.5 1.1-7.6a9.7 9.7 0 0 1 3.5-4.8A9.9 9.9 0 0 1 172 17h.3c3.5 0 6 1.1 7.9 3.5 1.7 2.3 2.6 5.7 2.6 10v16.8h-6.4V29.6c0-2.1-.6-3.8-1.8-5a6.4 6.4 0 0 0-4.8-1.8c-2 0-3.7.7-5 2a7.8 7.8 0 0 0-1.9 5.5v17h-6.4Zm63.8 1a12.2 12.2 0 0 1-10.9-6.2 19 19 0 0 1-1.8-7.3h1.4v12.5h-5.1v-40h6.4v19.8l-2 3.5c.2-3.1.8-5.7 1.9-7.7a11 11 0 0 1 4.4-4.5c1.8-1 3.9-1.5 6.1-1.5a13.4 13.4 0 0 1 12.8 9.1c.7 1.9 1 3.8 1 6v1c0 2.2-.3 4.1-1 6a13.6 13.6 0 0 1-13.2 9.4Zm-1.2-5.5a8.4 8.4 0 0 0 7.9-5c.7-1.5 1.1-3.3 1.1-5.3s-.4-3.8-1.1-5.3a8.7 8.7 0 0 0-3.2-3.6 9.6 9.6 0 0 0-9.2-.2 8.5 8.5 0 0 0-3.3 3.2c-.8 1.4-1.3 3-1.3 5v2.3a9 9 0 0 0 1.3 4.8 9 9 0 0 0 3.4 3c1.4.7 2.8 1 4.4 1Zm27.3 3.9-10-28.9h6.5l9.5 28.9h-6Zm-7.5 12.2v-5.7h4.9c1 0 2-.1 2.9-.4a4 4 0 0 0 2-1.4c.4-.7.9-1.6 1.2-2.7l8.6-30.9h6.2l-9.3 32.4a14 14 0 0 1-2.5 5 8.9 8.9 0 0 1-4 2.8c-1.5.6-3.4.9-5.6.9h-4.4Zm9-12.2v-5.2h6.4v5.2H248Z"></path><path fill="#003DFF" d="M534.4 9.1H528a.8.8 0 0 1-.7-.7V1.8c0-.4.2-.7.6-.8l6.5-1c.4 0 .8.2.9.6v7.8c0 .4-.4.7-.8.7zM428 35.2V.8c0-.5-.3-.8-.7-.8h-.2l-6.4 1c-.4 0-.7.4-.7.8v35c0 1.6 0 11.8 12.3 12.2.5 0 .8-.4.8-.8V43c0-.4-.3-.7-.6-.8-4.5-.5-4.5-6-4.5-7zm106.5-21.8H528c-.4 0-.7.4-.7.8v34c0 .4.3.8.7.8h6.5c.4 0 .8-.4.8-.8v-34c0-.5-.4-.8-.8-.8zm-17.7 21.8V.8c0-.5-.3-.8-.8-.8l-6.5 1c-.4 0-.7.4-.7.8v35c0 1.6 0 11.8 12.3 12.2.4 0 .8-.4.8-.8V43c0-.4-.3-.7-.7-.8-4.4-.5-4.4-6-4.4-7zm-22.2-20.6a16.5 16.5 0 0 1 8.6 9.3c.8 2.2 1.3 4.8 1.3 7.5a19.4 19.4 0 0 1-4.6 12.6 14.8 14.8 0 0 1-5.2 3.6c-2 .9-5.2 1.4-6.8 1.4a21 21 0 0 1-6.7-1.4 15.4 15.4 0 0 1-8.6-9.3 21.3 21.3 0 0 1 0-14.4 15.2 15.2 0 0 1 8.6-9.3c2-.8 4.3-1.2 6.7-1.2s4.6.4 6.7 1.2zm-6.7 27.6c2.7 0 4.7-1 6.2-3s2.2-4.3 2.2-7.8-.7-6.3-2.2-8.3-3.5-3-6.2-3-4.7 1-6.1 3c-1.5 2-2.2 4.8-2.2 8.3s.7 5.8 2.2 7.8 3.5 3 6.2 3zm-88.8-28.8c-6.2 0-11.7 3.3-14.8 8.2a18.6 18.6 0 0 0 4.8 25.2c1.8 1.2 4 1.8 6.2 1.7s.1 0 .1 0h.9c4.2-.7 8-4 9.1-8.1v7.4c0 .4.3.7.8.7h6.4a.7.7 0 0 0 .7-.7V14.2c0-.5-.3-.8-.7-.8h-13.5zm6.3 26.5a9.8 9.8 0 0 1-5.7 2h-.5a10 10 0 0 1-9.2-14c1.4-3.7 5-6.3 9-6.3h6.4v18.3zm152.3-26.5h13.5c.5 0 .8.3.8.7v33.7c0 .4-.3.7-.8.7h-6.4a.7.7 0 0 1-.8-.7v-7.4c-1.2 4-4.8 7.4-9 8h-.1a4.2 4.2 0 0 1-.5.1h-.9a10.3 10.3 0 0 1-7-2.6c-4-3.3-6.5-8.4-6.5-14.2 0-3.7 1-7.2 3-10 3-5 8.5-8.3 14.7-8.3zm.6 28.4c2.2-.1 4.2-.6 5.7-2V21.7h-6.3a9.8 9.8 0 0 0-9 6.4 10.2 10.2 0 0 0 9.1 13.9h.5zM452.8 13.4c-6.2 0-11.7 3.3-14.8 8.2a18.5 18.5 0 0 0 3.6 24.3 10.4 10.4 0 0 0 13 .6c2.2-1.5 3.8-3.7 4.5-6.1v7.8c0 2.8-.8 5-2.2 6.3-1.5 1.5-4 2.2-7.5 2.2l-6-.3c-.3 0-.7.2-.8.5l-1.6 5.5c-.1.4.1.8.5 1h.1c2.8.4 5.5.6 7 .6 6.3 0 11-1.4 14-4.1 2.7-2.5 4.2-6.3 4.5-11.4V14.2c0-.5-.4-.8-.8-.8h-13.5zm6.3 8.2v18.3a9.6 9.6 0 0 1-5.6 2h-1a10.3 10.3 0 0 1-8.8-14c1.4-3.7 5-6.3 9-6.3h6.4zM291 31.5A32 32 0 0 1 322.8 0h30.8c.6 0 1.2.5 1.2 1.2v61.5c0 1.1-1.3 1.7-2.2 1l-19.2-17a18 18 0 0 1-11 3.4 18.1 18.1 0 1 1 18.2-14.8c-.1.4-.5.7-.9.6-.1 0-.3 0-.4-.2l-3.8-3.4c-.4-.3-.6-.8-.7-1.4a12 12 0 1 0-2.4 8.3c.4-.4 1-.5 1.6-.2l14.7 13.1v-46H323a26 26 0 1 0 10 49.7c.8-.4 1.6-.2 2.3.3l3 2.7c.3.2.3.7 0 1l-.2.2a32 32 0 0 1-47.2-28.6z"></path></svg></a></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch@5.46.0/dist/lite/builds/browser.umd.min.js"></script><script src="/js/search/algolia.js?v=5.5.3"></script></div></div></body></html>
