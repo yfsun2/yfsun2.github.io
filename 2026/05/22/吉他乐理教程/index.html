@@ -1,0 +1,561 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>吉他乐理教程 | yfsun2的个人博客</title><meta name="author" content="yfsun2"><meta name="copyright" content="yfsun2"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="吉他乐理详细教程（新手入门到进阶）第一章 基础乐理入门（必学，奠定吉他演奏基础）1.1 音的基本概念（吉他发声的核心）吉他是半音乐器，一个品格就代表一个半音，两个品格代表一个全音（即大二度），这是吉他指板音阶、和弦按法的核心逻辑。我们先掌握3个关键概念，后续所有乐理都围绕这三点展开：  音名与唱名：音名是固定不变的（C、D、E、F、G、A、B），唱名是我们唱歌时的发音（do、re、mi、fa、so">
+<meta property="og:type" content="article">
+<meta property="og:title" content="吉他乐理教程">
+<meta property="og:url" content="https://blog.yfsun2.com/2026/05/22/%E5%90%89%E4%BB%96%E4%B9%90%E7%90%86%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="yfsun2的个人博客">
+<meta property="og:description" content="吉他乐理详细教程（新手入门到进阶）第一章 基础乐理入门（必学，奠定吉他演奏基础）1.1 音的基本概念（吉他发声的核心）吉他是半音乐器，一个品格就代表一个半音，两个品格代表一个全音（即大二度），这是吉他指板音阶、和弦按法的核心逻辑。我们先掌握3个关键概念，后续所有乐理都围绕这三点展开：  音名与唱名：音名是固定不变的（C、D、E、F、G、A、B），唱名是我们唱歌时的发音（do、re、mi、fa、so">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.yfsun2.com/images/avatar.jpg">
+<meta property="article:published_time" content="2026-05-22T12:51:14.000Z">
+<meta property="article:modified_time" content="2026-05-22T12:53:10.764Z">
+<meta property="article:author" content="yfsun2">
+<meta property="article:tag" content="吉他乐理教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.yfsun2.com/images/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "吉他乐理教程",
+  "url": "https://blog.yfsun2.com/2026/05/22/%E5%90%89%E4%BB%96%E4%B9%90%E7%90%86%E6%95%99%E7%A8%8B/",
+  "image": "https://blog.yfsun2.com/images/avatar.jpg",
+  "datePublished": "2026-05-22T12:51:14.000Z",
+  "dateModified": "2026-05-22T12:53:10.764Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "yfsun2",
+      "url": "https://blog.yfsun2.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/images/syf.png"><link rel="canonical" href="https://blog.yfsun2.com/2026/05/22/%E5%90%89%E4%BB%96%E4%B9%90%E7%90%86%E6%95%99%E7%A8%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-0Hk5ubxGre"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5bd1eddb888c613d21669f1c102e8ce2";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"NA35J2H9EZ","apiKey":"711ce70d63121d7f6d8409113af7c7a6","indexName":"my-hexo-blog","hitsPerPage":6,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，耗时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '吉他乐理教程',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/guitar/"><i class="fa-fw fas fa-guitar"></i><span> 吉他谱</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/dgg/"><i class="fa-fw fas fa-ticket"></i><span> 刮刮乐</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/images/syf.png" alt="Logo"><span class="site-name">yfsun2的个人博客</span></a><a class="nav-page-title" href="/"><span class="site-name">吉他乐理教程</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/guitar/"><i class="fa-fw fas fa-guitar"></i><span> 吉他谱</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/dgg/"><i class="fa-fw fas fa-ticket"></i><span> 刮刮乐</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">吉他乐理教程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-22T12:51:14.000Z" title="发表于 2026-05-22 20:51:14">2026-05-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-22T12:53:10.764Z" title="更新于 2026-05-22 20:53:10">2026-05-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/">学习教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="吉他乐理详细教程（新手入门到进阶）"><a href="#吉他乐理详细教程（新手入门到进阶）" class="headerlink" title="吉他乐理详细教程（新手入门到进阶）"></a>吉他乐理详细教程（新手入门到进阶）</h1><h1 id="第一章-基础乐理入门（必学，奠定吉他演奏基础）"><a href="#第一章-基础乐理入门（必学，奠定吉他演奏基础）" class="headerlink" title="第一章 基础乐理入门（必学，奠定吉他演奏基础）"></a>第一章 基础乐理入门（必学，奠定吉他演奏基础）</h1><h2 id="1-1-音的基本概念（吉他发声的核心）"><a href="#1-1-音的基本概念（吉他发声的核心）" class="headerlink" title="1.1 音的基本概念（吉他发声的核心）"></a>1.1 音的基本概念（吉他发声的核心）</h2><p>吉他是半音乐器，一个品格就代表一个半音，两个品格代表一个全音（即大二度），这是吉他指板音阶、和弦按法的核心逻辑。我们先掌握3个关键概念，后续所有乐理都围绕这三点展开：</p>
+<ul>
+<li><p><strong>音名与唱名</strong>：音名是固定不变的（C、D、E、F、G、A、B），唱名是我们唱歌时的发音（do、re、mi、fa、sol、la、si），对应关系固定：C=do、D=re、E=mi、F=fa、G=sol、A=la、B=si。</p>
+</li>
+<li><p><strong>音程</strong>：两个音之间的高低差距，核心区分“半音”和“全音”：相邻两个音（如C和C#、E和F）是半音；中间隔一个音（如C和D、F和G）是全音。注意：E和F、B和C之间天生是半音，没有中间音，这是吉他指板音阶推导的关键。</p>
+</li>
+<li><p><strong>八度</strong>：两个音名相同、高低不同的音（如低音C和高音C），中间相差12个半音，吉他上表现为“同一音在不同弦、不同品格重复出现”（如六弦空弦是E，一弦空弦也是E，相差两个八度）。</p>
+</li>
+</ul>
+<p>补充：吉他六弦到一弦的标准空弦音（从粗到细）：6弦=E（低音）、5弦=A、4弦=D、3弦=G、2弦=B、1弦=E（高音），相邻琴弦（除3弦和2弦）之间是纯四度（5个半音），3弦和2弦之间是大三度（4个半音），这是吉他指板音位记忆的核心规律。</p>
+<h2 id="1-2-节奏与节拍（弹唱不跑调、不抢拍的关键）"><a href="#1-2-节奏与节拍（弹唱不跑调、不抢拍的关键）" class="headerlink" title="1.2 节奏与节拍（弹唱不跑调、不抢拍的关键）"></a>1.2 节奏与节拍（弹唱不跑调、不抢拍的关键）</h2><p>节奏是音乐的骨架，决定曲子的律动，尤其对你弹唱《传奇》等歌曲至关重要，核心是“稳定的节拍+准确的时值”，结合你熟悉的53231323节奏型，重点讲解：</p>
+<h3 id="1-2-1-节拍（拍号）"><a href="#1-2-1-节拍（拍号）" class="headerlink" title="1.2.1 节拍（拍号）"></a>1.2.1 节拍（拍号）</h3><p>吉他弹唱最常用3种拍号，写在乐谱开头，格式为“分子/分母”：</p>
+<ul>
+<li><p><strong>4/4拍（四四拍）</strong>：最常用（如《传奇》《逝年》），分母“4”表示以四分音符为一拍，分子“4”表示每小节有4拍；强弱规律：强-弱-次强-弱，弹唱时重音落在第1拍和第3拍，53231323节奏型就是适配4/4拍的万能分解节奏。</p>
+</li>
+<li><p><strong>3/4拍（四三拍）</strong>：强弱规律“强-弱-弱”，适合抒情、圆舞曲风格，弹唱时节奏更柔和，分解节奏常用“32123”。</p>
+</li>
+<li><p><strong>6/8拍（八六拍）</strong>：以八分音符为一拍，每小节6拍，强弱规律“强-弱-弱-次强-弱-弱”，适合慢节奏民谣、布鲁斯，扫弦节奏多为“↓↑↓ ↑↓↑”。</p>
+</li>
+</ul>
+<h3 id="1-2-2-时值（音符的长短）"><a href="#1-2-2-时值（音符的长短）" class="headerlink" title="1.2.2 时值（音符的长短）"></a>1.2.2 时值（音符的长短）</h3><p>时值决定每个音弹多久，从长到短依次为（以4/4拍为例，1拍=1个四分音符）：</p>
+<ul>
+<li><p>全音符：4拍（弹1下，保持4拍时长）</p>
+</li>
+<li><p>二分音符：2拍（弹1下，保持2拍时长）</p>
+</li>
+<li><p>四分音符：1拍（最基础，弹1下抬1下，如53231323中的每个音）</p>
+</li>
+<li><p>八分音符：1/2拍（两个八分音符占1拍，弹唱时节奏更密集，如扫弦的“↓↑”）</p>
+</li>
+<li><p>十六分音符：1/4拍（四个十六分音符占1拍，适合快速弹唱片段）</p>
+</li>
+</ul>
+<p>补充：附点音符（音符后加小圆点）：增加原音符时值的一半（如附点八分音符=3/4拍）；休止符：表示“不弹”，时长和对应音符一致，弹唱时要注意停顿，避免抢拍。</p>
+<h3 id="1-2-3-核心节奏型（直接套用，适配你的弹唱需求）"><a href="#1-2-3-核心节奏型（直接套用，适配你的弹唱需求）" class="headerlink" title="1.2.3 核心节奏型（直接套用，适配你的弹唱需求）"></a>1.2.3 核心节奏型（直接套用，适配你的弹唱需求）</h3><p>结合你常弹的弹唱风格，重点掌握2类节奏型，无需死记硬背，练熟就能适配大部分流行、民谣歌曲：</p>
+<ul>
+<li><strong>分解和弦节奏（抒情弹唱首选）</strong>：</li>
+</ul>
+<ul>
+<li><p>万能型：53231323（4/4拍），拇指负责5弦/6弦（低音），食指、中指、无名指分别负责3、2、1弦，适配《传奇》等温柔歌曲。</p>
+</li>
+<li><p>变体：632123（适配低音在6弦的和弦，如G、Em），旋律感更强；532 1323（加入停顿，突出重拍）。</p>
+</li>
+<li><p><strong>扫弦节奏（欢快/摇滚风格）</strong>：</p>
+</li>
+</ul>
+<ul>
+<li><p>基础型：4/4拍“↓ ↓↑ ↓ ↑↓”（强拍下扫，弱拍上扫）。</p>
+</li>
+<li><p>切分音扫弦：“↑↓↑”，打破强弱规律，制造律动感，适合活泼歌曲。</p>
+</li>
+<li><p>闷音扫弦：左手轻触琴弦（不按实），右手扫弦，发出“沙沙”声，适合摇滚风格。</p>
+</li>
+</ul>
+<h2 id="1-3-调式与音阶（吉他指板音位的核心，突破横按、练耳关键）"><a href="#1-3-调式与音阶（吉他指板音位的核心，突破横按、练耳关键）" class="headerlink" title="1.3 调式与音阶（吉他指板音位的核心，突破横按、练耳关键）"></a>1.3 调式与音阶（吉他指板音位的核心，突破横按、练耳关键）</h2><p>调式是一组音的排列规则，音阶是调式的具体表现（把调式中的音按高低排列），学会调式和音阶，能轻松记忆指板音位、理解和弦构成，还能辅助吉他练耳。</p>
+<h3 id="1-3-1-核心调式（新手先掌握2种，足够弹唱）"><a href="#1-3-1-核心调式（新手先掌握2种，足够弹唱）" class="headerlink" title="1.3.1 核心调式（新手先掌握2种，足够弹唱）"></a>1.3.1 核心调式（新手先掌握2种，足够弹唱）</h3><ul>
+<li><strong>自然大调（明朗、开阔，弹唱主流调式）</strong>：</li>
+</ul>
+<ul>
+<li><p>音程规律：全-全-半-全-全-全-半（7个音，相邻音之间的关系）。</p>
+</li>
+<li><p>示例：C自然大调（最基础，无升降音），音阶为C（do）、D（re）、E（mi）、F（fa）、G（sol）、A（la）、B（si），对应吉他指板前五品的音位，是新手练习音阶的首选。</p>
+</li>
+<li><p><strong>自然小调（柔和、暗淡，适配抒情/伤感歌曲）</strong>：</p>
+</li>
+</ul>
+<ul>
+<li><p>音程规律：全-半-全-全-半-全-全。</p>
+</li>
+<li><p>关系大小调：和自然大调共用一套音阶，只是主音不同（大调的6级音是小调的主音）。例如：C大调的关系小调是Am小调，音阶同样是C、D、E、F、G、A、B，主音为A（la）。</p>
+</li>
+</ul>
+<p>补充：五声调式（中国风歌曲常用）：在自然大调音阶基础上去掉4（F）和7（B），由宫、商、角、徵、羽5个音组成，弹唱中国风歌曲时可直接套用。</p>
+<h3 id="1-3-2-吉他指板音阶实操（新手易上手，辅助横按练习）"><a href="#1-3-2-吉他指板音阶实操（新手易上手，辅助横按练习）" class="headerlink" title="1.3.2 吉他指板音阶实操（新手易上手，辅助横按练习）"></a>1.3.2 吉他指板音阶实操（新手易上手，辅助横按练习）</h3><p>以C大调音阶（1-5品）为例，记住以下规律，轻松推导所有调式音阶：</p>
+<ul>
+<li><p>6弦（E）：空弦=E（mi）、1品=F（fa，半音）、3品=G（sol，全音）</p>
+</li>
+<li><p>5弦（A）：空弦=A（la）、2品=B（si）、3品=C（do）</p>
+</li>
+<li><p>4弦（D）：空弦=D（re）、2品=E（mi）、3品=F（fa）</p>
+</li>
+<li><p>3弦（G）：空弦=G（sol）、2品=A（la）、3品=B（si）</p>
+</li>
+<li><p>2弦（B）：空弦=B（si）、1品=C（do，半音）、3品=D（re）</p>
+</li>
+<li><p>1弦（E）：空弦=E（mi）、1品=F（fa）、3品=G（sol）</p>
+</li>
+</ul>
+<p>技巧：吉他指板上，12品的音和空弦音完全相同，只是高一个八度，记住这个规律，可快速记忆高把位音阶；练习时，可结合吉他练耳，弹一个音，哼唱对应的唱名，提升音准感知。</p>
+<h1 id="第二章-吉他核心乐理（和弦-编配，弹唱必备）"><a href="#第二章-吉他核心乐理（和弦-编配，弹唱必备）" class="headerlink" title="第二章 吉他核心乐理（和弦+编配，弹唱必备）"></a>第二章 吉他核心乐理（和弦+编配，弹唱必备）</h1><h2 id="2-1-和弦的基本概念（吉他弹唱的核心）"><a href="#2-1-和弦的基本概念（吉他弹唱的核心）" class="headerlink" title="2.1 和弦的基本概念（吉他弹唱的核心）"></a>2.1 和弦的基本概念（吉他弹唱的核心）</h2><p>和弦是由3个或3个以上的音，按照一定的音程关系叠置（同时奏响）组成的和声，吉他和弦就是在吉他指板上按出这些音的组合，是弹唱伴奏的基础。</p>
+<p>核心分类（新手先掌握4类，覆盖80%弹唱歌曲）：</p>
+<ul>
+<li><p><strong>三和弦</strong>：由3个音组成（根音+三音+五音），是最基础的和弦，分为4种：</p>
+<ul>
+<li><p>大三和弦（如C、G、F）：根音+大三度+小三度，音色明朗、协和，标记为“字母”（如C）。</p>
+</li>
+<li><p>小三和弦（如Am、Em、Dm）：根音+小三度+大三度，音色柔和、黯淡，标记为“字母+m”（如Am）。</p>
+</li>
+<li><p>增三和弦（如Caug）：根音+大三度+大三度，音色不协和、有扩张感，标记为“字母+aug”或“字母+”。</p>
+</li>
+<li><p>减三和弦（如Cdim）：根音+小三度+小三度，音色不协和、有收缩感，标记为“字母+dim”或“字母°”。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>七和弦</strong>：在三和弦基础上增加一个七音，音色更丰富，弹唱中最常用“属七和弦”（如G7）：</p>
+</li>
+</ul>
+<ul>
+<li><p>属七和弦（如G7、C7）：大三和弦+降七度音，音色有“倾向性”，常用于乐句结尾，引导回到主和弦。</p>
+</li>
+<li><p>大七和弦（如Cmaj7）：大三和弦+七度音，音色柔和，适合抒情歌曲。</p>
+</li>
+<li><p>小七和弦（如Am7）：小三和弦+降七度音，音色暗淡，适配伤感歌曲。</p>
+</li>
+<li><p><strong>九和弦/十一和弦/十三和弦</strong>：在七和弦基础上增加九度、十一度、十三度音，音色更复杂，适合进阶弹唱，弹奏时可根据需求删减部分音。</p>
+</li>
+<li><p><strong>挂留和弦</strong>：将三和弦的三音换成四音（sus4），音色更灵动，常用在和弦过渡（如Csus4、G7sus4）。</p>
+</li>
+</ul>
+<h2 id="2-2-和弦构成与按法逻辑（新手快速记和弦，突破横按）"><a href="#2-2-和弦构成与按法逻辑（新手快速记和弦，突破横按）" class="headerlink" title="2.2 和弦构成与按法逻辑（新手快速记和弦，突破横按）"></a>2.2 和弦构成与按法逻辑（新手快速记和弦，突破横按）</h2><p>新手记和弦不用死记指型，掌握“根音+音程规律”，就能自己推导和弦按法，尤其能辅助你练习横按把位（横按的核心是按住根音和关键音）：</p>
+<h3 id="2-2-1-核心和弦构成示例（新手必背）"><a href="#2-2-1-核心和弦构成示例（新手必背）" class="headerlink" title="2.2.1 核心和弦构成示例（新手必背）"></a>2.2.1 核心和弦构成示例（新手必背）</h3><ul>
+<li><p>C和弦（大三和弦）：根音=C（1）、三音=E（3）、五音=G（5），按法：3弦3品（无名指）、2弦1品（食指）、1弦2品（中指）。</p>
+</li>
+<li><p>Am和弦（小三和弦）：根音=A（6）、三音=C（1）、五音=E（3），按法：2弦1品（食指）、3弦2品（中指）。</p>
+</li>
+<li><p>G和弦（大三和弦）：根音=G（5）、三音=B（7）、五音=D（2），按法：6弦3品（无名指）、5弦2品（中指）、1弦3品（小指）。</p>
+</li>
+<li><p>G7和弦（属七和弦）：根音=G（5）、三音=B（7）、五音=D（2）、七音=F（4），按法：6弦3品（无名指）、5弦2品（中指）、1弦1品（食指）。</p>
+</li>
+</ul>
+<h3 id="2-2-2-横按和弦技巧（针对你未完成的横按练习）"><a href="#2-2-2-横按和弦技巧（针对你未完成的横按练习）" class="headerlink" title="2.2.2 横按和弦技巧（针对你未完成的横按练习）"></a>2.2.2 横按和弦技巧（针对你未完成的横按练习）</h3><p>横按是新手的难点，结合乐理知识，掌握以下技巧，高效突破：</p>
+<ul>
+<li><p>横按的核心：按住“根音所在的弦”+“和弦的关键音”，比如F和弦（横按1品），根音是F（6弦1品），关键音是A（3弦2品）、C（2弦3品），按住横按后，重点确保根音和关键音发音清晰。</p>
+</li>
+<li><p>借力技巧：用食指侧面横按，手腕微微用力，拇指和食指形成“夹子”状，避免手指僵硬；先从F小横按（1-3弦1品）练起，再过渡到F大横按（1-6弦1品）。</p>
+</li>
+<li><p>结合音阶：横按把位的和弦，根音对应指板上的音阶位置，比如F和弦的根音F，在6弦1品、5弦3品，记住音阶位置，能快速找到横按的准确品格。</p>
+</li>
+</ul>
+<h2 id="2-3-和弦编配（弹唱时，如何搭配和弦）"><a href="#2-3-和弦编配（弹唱时，如何搭配和弦）" class="headerlink" title="2.3 和弦编配（弹唱时，如何搭配和弦）"></a>2.3 和弦编配（弹唱时，如何搭配和弦）</h2><p>和弦编配的核心是“贴合旋律的调式和节奏”，新手不用复杂编配，记住以下3个规律，就能给简单歌曲配和弦（如你常弹的《传奇》《逝年》）：</p>
+<ul>
+<li><p>确定调式：先确定歌曲的调（如C大调、G大调），再选择对应调式的和弦（C大调常用和弦：C、Am、F、G、G7）。</p>
+</li>
+<li><p>和弦级数规律（核心）：调式中，和弦按“主和弦（I级）-下属和弦（IV级）-属和弦（V级）”的顺序搭配，最稳妥、最贴合旋律：</p>
+</li>
+</ul>
+<ul>
+<li><p>C大调：I级=C（主和弦，稳定）、IV级=F（下属和弦）、V级=G（属和弦，有倾向性），常用搭配：C→F→G→C。</p>
+</li>
+<li><p>Am小调：I级=Am（主和弦）、IV级=Dm（下属和弦）、V级=Em（属和弦），常用搭配：Am→Dm→Em→Am。</p>
+</li>
+<li><p>贴合旋律：和弦的根音，尽量和旋律的重点音（每句开头、结尾的音）一致，比如旋律开头是C（do），就用C和弦；结尾是G（sol），就用G或G7和弦，过渡更自然。</p>
+</li>
+</ul>
+<h1 id="第三章-吉他识谱（看懂六线谱、简谱，快速上手弹唱）"><a href="#第三章-吉他识谱（看懂六线谱、简谱，快速上手弹唱）" class="headerlink" title="第三章 吉他识谱（看懂六线谱、简谱，快速上手弹唱）"></a>第三章 吉他识谱（看懂六线谱、简谱，快速上手弹唱）</h1><p>吉他弹唱常用“六线谱+简谱”结合，六线谱看指法，简谱看旋律和节奏，新手重点掌握这两种谱子的读法，就能快速上手弹唱自己喜欢的歌曲。</p>
+<h2 id="3-1-六线谱（吉他专属谱，重点看指法）"><a href="#3-1-六线谱（吉他专属谱，重点看指法）" class="headerlink" title="3.1 六线谱（吉他专属谱，重点看指法）"></a>3.1 六线谱（吉他专属谱，重点看指法）</h2><p>六线谱是吉他最常用的乐谱，直观易懂，不需要复杂的乐理基础，核心是“对应吉他琴弦，标注按法和节奏”：</p>
+<ul>
+<li><p>六线谱的横线：从上到下，依次对应吉他的1弦（高音E）、2弦（B）、3弦（G）、4弦（D）、5弦（A）、6弦（低音E），和吉他琴弦的粗细顺序相反（吉他琴弦从粗到细是6-1弦）。</p>
+</li>
+<li><p>六线谱上的数字：表示“按的品格数”，数字写在某条线上，就表示按对应琴弦的对应品格，空弦不按则不写数字（或写0）。例如：1弦上写2，就是按1弦2品；6弦上写3，就是按6弦3品。</p>
+</li>
+<li><p>六线谱的节奏标记：和简谱一致，用音符（全音符、二分音符等）标记时值，数字上方/下方的横线表示节奏型，新手可先忽略复杂节奏，重点看数字（按法），配合之前学的节奏型练习。</p>
+</li>
+<li><p>特殊标记：① 滑音：数字间用弧线连接，标注“sl.”，表示从第一个音滑到第二个音，不抬手指；② 击弦：数字前加“h”，表示用手指快速击弦按出对应品格；③ 勾弦：数字前加“p”，表示按好和弦后，手指快速勾弦发声；④ 扫弦：六线谱上的箭头，向上（↑）表示从6弦扫到1弦，向下（↓）表示从1弦扫到6弦，箭头长度表示扫弦的范围。</p>
+</li>
+</ul>
+<h2 id="3-2-简谱（看旋律、节奏，适配弹唱）"><a href="#3-2-简谱（看旋律、节奏，适配弹唱）" class="headerlink" title="3.2 简谱（看旋律、节奏，适配弹唱）"></a>3.2 简谱（看旋律、节奏，适配弹唱）</h2><p>简谱用数字（1、2、3、4、5、6、7）表示唱名（do、re、mi、fa、sol、la、si），是吉他弹唱中辅助看旋律的核心，重点掌握3点：</p>
+<ul>
+<li><p>数字含义：1=do、2=re、3=mi、4=fa、5=sol、6=la、7=si，数字上方加一个点（·）表示高音，下方加一个点（·）表示低音，没有点表示中音（最常用）。</p>
+</li>
+<li><p>节奏标记：简谱的节奏和六线谱一致，用横线、附点、休止符标记时值，例如：1（四分音符，1拍）、1 -（二分音符，2拍）、1·（附点四分音符，1.5拍）、0（休止符，不发声）。</p>
+</li>
+<li><p>调号标记：简谱开头的“1=C”“1=G”，表示歌曲的调式，例如“1=C”就是C大调，对应吉他上的C调和弦，弹唱时和弦要和调号对应，避免跑调。</p>
+</li>
+</ul>
+<h2 id="3-3-六线谱-简谱结合实操（新手入门示例）"><a href="#3-3-六线谱-简谱结合实操（新手入门示例）" class="headerlink" title="3.3 六线谱+简谱结合实操（新手入门示例）"></a>3.3 六线谱+简谱结合实操（新手入门示例）</h2><p>以《传奇》片段为例，结合两种谱子，快速上手：</p>
+<ul>
+<li><p>简谱：1 1 5 5 6 6 5（对应歌词“只是因为在人群中”），调号1=C（C大调），节奏为四分音符，每拍1个音。</p>
+</li>
+<li><p>六线谱：对应C和弦按法，数字标注在1、2、3弦，配合53231323分解节奏，弹1个音对应1个节奏型的音，弹唱时先练和弦按法，再配合旋律哼唱，逐步衔接。</p>
+</li>
+</ul>
+<h1 id="第四章-进阶乐理（适配你的进阶练习，提升弹唱质感）"><a href="#第四章-进阶乐理（适配你的进阶练习，提升弹唱质感）" class="headerlink" title="第四章 进阶乐理（适配你的进阶练习，提升弹唱质感）"></a>第四章 进阶乐理（适配你的进阶练习，提升弹唱质感）</h1><h2 id="4-1-转调技巧（弹唱不同调式的歌曲）"><a href="#4-1-转调技巧（弹唱不同调式的歌曲）" class="headerlink" title="4.1 转调技巧（弹唱不同调式的歌曲）"></a>4.1 转调技巧（弹唱不同调式的歌曲）</h2><p>新手前期可固定练C大调、G大调，熟练后需要学习转调，适配不同音域的歌曲（比如有些歌曲音太高，需要转成低一点的调），核心技巧：</p>
+<ul>
+<li><p>借助变调夹：最简单的转调方式，变调夹夹在吉他某一品，就相当于把吉他的空弦音升高，例如：夹1品=升C调，夹2品=D调，夹3品=升D调，夹5品=G调（新手常用，无需重新记和弦指型）。</p>
+</li>
+<li><p>和弦转调：根据调式的级数规律，替换对应和弦，例如C大调转G大调，C→G、Am→Em、F→C、G→D，按这个对应关系替换，就能完成转调，适合不使用变调夹的情况。</p>
+</li>
+</ul>
+<h2 id="4-2-吉他练耳（提升音准，辅助弹唱和创作）"><a href="#4-2-吉他练耳（提升音准，辅助弹唱和创作）" class="headerlink" title="4.2 吉他练耳（提升音准，辅助弹唱和创作）"></a>4.2 吉他练耳（提升音准，辅助弹唱和创作）</h2><p>练耳是吉他进阶的关键，尤其对你的弹唱和音阶练习有很大帮助，新手可从3个基础练习入手：</p>
+<ul>
+<li><p>单音练耳：弹吉他上的单个音（如C、D、E），哼唱对应的唱名，反复练习，直到能听到音就说出唱名，准确对应指板音位。</p>
+</li>
+<li><p>和弦练耳：弹奏常用和弦（C、Am、F、G），感受不同和弦的音色差异，记住大三和弦、小三和弦、属七和弦的音色特点，弹唱时能快速匹配旋律。</p>
+</li>
+<li><p>旋律练耳：听一段简单的旋律（如《传奇》前奏），用吉他弹出对应的音，逐步提升对旋律的敏感度，为后续即兴弹唱、创作打下基础。</p>
+</li>
+</ul>
+<h2 id="4-3-即兴弹唱基础（结合乐理，灵活弹唱）"><a href="#4-3-即兴弹唱基础（结合乐理，灵活弹唱）" class="headerlink" title="4.3 即兴弹唱基础（结合乐理，灵活弹唱）"></a>4.3 即兴弹唱基础（结合乐理，灵活弹唱）</h2><p>熟练掌握基础乐理和和弦后，可尝试即兴弹唱，核心是“灵活运用和弦、节奏型”：</p>
+<ul>
+<li><p>和弦即兴：根据歌曲的调式，灵活替换和弦，比如C大调中，可将C→F→G换成C→Csus4→F→G7，增加歌曲的灵动性。</p>
+</li>
+<li><p>节奏型即兴：同一首歌，可切换分解节奏和扫弦节奏，比如《传奇》主歌用53231323分解，副歌用扫弦，提升弹唱的层次感。</p>
+</li>
+<li><p>旋律即兴：在和弦伴奏的基础上，加入简单的旋律装饰（如滑音、击弦），让弹唱更有个人风格，适配你喜欢的弹唱方式。</p>
+</li>
+</ul>
+<h1 id="第五章-新手练习计划（贴合你的进度，高效提升）"><a href="#第五章-新手练习计划（贴合你的进度，高效提升）" class="headerlink" title="第五章 新手练习计划（贴合你的进度，高效提升）"></a>第五章 新手练习计划（贴合你的进度，高效提升）</h1><p>结合你的练习进度（已完成其他把位，只差横按），制定专属练习计划，每天30-60分钟，循序渐进突破难点：</p>
+<h2 id="第一阶段（1-7天）：巩固基础，铺垫横按"><a href="#第一阶段（1-7天）：巩固基础，铺垫横按" class="headerlink" title="第一阶段（1-7天）：巩固基础，铺垫横按"></a>第一阶段（1-7天）：巩固基础，铺垫横按</h2><ul>
+<li><p>10分钟：音阶练习（C大调音阶1-5品），边弹边哼唱唱名，熟悉指板音位。</p>
+</li>
+<li><p>15分钟：和弦练习（C、Am、F小横按、G、G7），重点练习F小横按，确保1-3弦发音清晰，每天练习5-10组。</p>
+</li>
+<li><p>15分钟：节奏型练习（53231323分解节奏），配合C、Am和弦，弹唱简单片段（如《传奇》主歌）。</p>
+</li>
+</ul>
+<h2 id="第二阶段（8-14天）：突破横按，衔接弹唱"><a href="#第二阶段（8-14天）：突破横按，衔接弹唱" class="headerlink" title="第二阶段（8-14天）：突破横按，衔接弹唱"></a>第二阶段（8-14天）：突破横按，衔接弹唱</h2><ul>
+<li><p>15分钟：横按练习（F大横按），先按住横按，再按3弦2品、2弦3品，反复按压，缓解手指僵硬，每天练习10组。</p>
+</li>
+<li><p>15分钟：和弦转换练习（C→F→G→Am），重点练习F和弦和其他和弦的衔接，加快转换速度。</p>
+</li>
+<li><p>10分钟：弹唱练习，用学会的和弦和节奏型，弹唱《传奇》完整片段，注意节奏稳定，不抢拍、不跑调。</p>
+</li>
+</ul>
+<h2 id="第三阶段（15-30天）：进阶提升，灵活运用"><a href="#第三阶段（15-30天）：进阶提升，灵活运用" class="headerlink" title="第三阶段（15-30天）：进阶提升，灵活运用"></a>第三阶段（15-30天）：进阶提升，灵活运用</h2><ul>
+<li><p>10分钟：音阶练习（C大调音阶5-12品），结合八度规律，记忆高把位音位。</p>
+</li>
+<li><p>15分钟：和弦拓展练习（Dm、Em、Fmaj7），丰富和弦储备，尝试给《逝年》配和弦。</p>
+</li>
+<li><p>15分钟：练耳+即兴练习，听简单旋律弹单音，尝试用不同节奏型弹唱同一首歌，提升灵活性。</p>
+</li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>吉他乐理学习的核心是“结合实操，循序渐进”，不用死记硬背专业术语，重点掌握“音、节奏、和弦、识谱”四大核心，贴合你熟悉的53231323节奏型、《传奇》等弹唱需求，针对性突破横按难点，每天坚持练习，就能快速从新手进阶，实现流畅弹唱。记住：乐理是辅助，多弹、多练、多唱，才能真正掌握吉他演奏的精髓。</p>
+<blockquote>
+<p>（注：文档部分内容可能由 AI 生成）</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blog.yfsun2.com/">yfsun2</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blog.yfsun2.com/2026/05/22/%E5%90%89%E4%BB%96%E4%B9%90%E7%90%86%E6%95%99%E7%A8%8B/">https://blog.yfsun2.com/2026/05/22/%E5%90%89%E4%BB%96%E4%B9%90%E7%90%86%E6%95%99%E7%A8%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://blog.yfsun2.com" target="_blank">yfsun2的个人博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%90%89%E4%BB%96%E4%B9%90%E7%90%86%E6%95%99%E7%A8%8B/">吉他乐理教程</a></div><div class="post-share"><div class="social-share" data-image="/images/avatar.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/donate.jpg" target="_blank"><img class="post-qr-code-img" src="/images/donate.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/04/03/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="Python环境配置"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Python环境配置</div></div><div class="info-2"><div class="info-item-1">Python环境配置一、Anaconda 安装教程（Windows/Mac/Linux 通用）Anaconda 是数据科学领域常用的环境管理工具，包含 Conda 包管理器、Python 解释器及大量预装科学计算库，推荐新手直接安装完整版（而非 Miniconda）。 1. 下载安装包 官网地址：Anaconda 官方下载  版本选择：根据操作系统（Windows/Mac/Linux）和系统位数（32/64 位）选择对应安装包（建议选 Python 3.9+ 版本，兼容性更强）  国内镜像（推荐，下载更快）：清华大学开源镜像站   2. 安装步骤（以 Windows 为例，Mac/Linux 类似） 双击安装包，点击「Next」→ 勾选「I Agree」  选择安装类型：    个人使用选「Just Me」（推荐，无需管理员权限）  多用户共享选「All Users」（需管理员权限）    选择安装路径：   建议自定义路径（如 D:\Anaconda3），避免中文路径和空格（否则后续可能报错）   高级选项（关键！）：   勾选「Add Anaconda3 to my PATH...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">yfsun2</div><div class="author-info-description">输了你，赢了世界又如何</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yfsun2"><i class="fab fa-github"></i><span>关注我</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%89%E4%BB%96%E4%B9%90%E7%90%86%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%EF%BC%88%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">吉他乐理详细教程（新手入门到进阶）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%9F%BA%E7%A1%80%E4%B9%90%E7%90%86%E5%85%A5%E9%97%A8%EF%BC%88%E5%BF%85%E5%AD%A6%EF%BC%8C%E5%A5%A0%E5%AE%9A%E5%90%89%E4%BB%96%E6%BC%94%E5%A5%8F%E5%9F%BA%E7%A1%80%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">第一章 基础乐理入门（必学，奠定吉他演奏基础）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E9%9F%B3%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%EF%BC%88%E5%90%89%E4%BB%96%E5%8F%91%E5%A3%B0%E7%9A%84%E6%A0%B8%E5%BF%83%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">1.1 音的基本概念（吉他发声的核心）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E8%8A%82%E5%A5%8F%E4%B8%8E%E8%8A%82%E6%8B%8D%EF%BC%88%E5%BC%B9%E5%94%B1%E4%B8%8D%E8%B7%91%E8%B0%83%E3%80%81%E4%B8%8D%E6%8A%A2%E6%8B%8D%E7%9A%84%E5%85%B3%E9%94%AE%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">1.2 节奏与节拍（弹唱不跑调、不抢拍的关键）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1-%E8%8A%82%E6%8B%8D%EF%BC%88%E6%8B%8D%E5%8F%B7%EF%BC%89"><span class="toc-number">2.2.1.</span> <span class="toc-text">1.2.1 节拍（拍号）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-%E6%97%B6%E5%80%BC%EF%BC%88%E9%9F%B3%E7%AC%A6%E7%9A%84%E9%95%BF%E7%9F%AD%EF%BC%89"><span class="toc-number">2.2.2.</span> <span class="toc-text">1.2.2 时值（音符的长短）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3-%E6%A0%B8%E5%BF%83%E8%8A%82%E5%A5%8F%E5%9E%8B%EF%BC%88%E7%9B%B4%E6%8E%A5%E5%A5%97%E7%94%A8%EF%BC%8C%E9%80%82%E9%85%8D%E4%BD%A0%E7%9A%84%E5%BC%B9%E5%94%B1%E9%9C%80%E6%B1%82%EF%BC%89"><span class="toc-number">2.2.3.</span> <span class="toc-text">1.2.3 核心节奏型（直接套用，适配你的弹唱需求）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E8%B0%83%E5%BC%8F%E4%B8%8E%E9%9F%B3%E9%98%B6%EF%BC%88%E5%90%89%E4%BB%96%E6%8C%87%E6%9D%BF%E9%9F%B3%E4%BD%8D%E7%9A%84%E6%A0%B8%E5%BF%83%EF%BC%8C%E7%AA%81%E7%A0%B4%E6%A8%AA%E6%8C%89%E3%80%81%E7%BB%83%E8%80%B3%E5%85%B3%E9%94%AE%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">1.3 调式与音阶（吉他指板音位的核心，突破横按、练耳关键）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-1-%E6%A0%B8%E5%BF%83%E8%B0%83%E5%BC%8F%EF%BC%88%E6%96%B0%E6%89%8B%E5%85%88%E6%8E%8C%E6%8F%A12%E7%A7%8D%EF%BC%8C%E8%B6%B3%E5%A4%9F%E5%BC%B9%E5%94%B1%EF%BC%89"><span class="toc-number">2.3.1.</span> <span class="toc-text">1.3.1 核心调式（新手先掌握2种，足够弹唱）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-2-%E5%90%89%E4%BB%96%E6%8C%87%E6%9D%BF%E9%9F%B3%E9%98%B6%E5%AE%9E%E6%93%8D%EF%BC%88%E6%96%B0%E6%89%8B%E6%98%93%E4%B8%8A%E6%89%8B%EF%BC%8C%E8%BE%85%E5%8A%A9%E6%A8%AA%E6%8C%89%E7%BB%83%E4%B9%A0%EF%BC%89"><span class="toc-number">2.3.2.</span> <span class="toc-text">1.3.2 吉他指板音阶实操（新手易上手，辅助横按练习）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%90%89%E4%BB%96%E6%A0%B8%E5%BF%83%E4%B9%90%E7%90%86%EF%BC%88%E5%92%8C%E5%BC%A6-%E7%BC%96%E9%85%8D%EF%BC%8C%E5%BC%B9%E5%94%B1%E5%BF%85%E5%A4%87%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">第二章 吉他核心乐理（和弦+编配，弹唱必备）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E5%92%8C%E5%BC%A6%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%EF%BC%88%E5%90%89%E4%BB%96%E5%BC%B9%E5%94%B1%E7%9A%84%E6%A0%B8%E5%BF%83%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 和弦的基本概念（吉他弹唱的核心）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E5%92%8C%E5%BC%A6%E6%9E%84%E6%88%90%E4%B8%8E%E6%8C%89%E6%B3%95%E9%80%BB%E8%BE%91%EF%BC%88%E6%96%B0%E6%89%8B%E5%BF%AB%E9%80%9F%E8%AE%B0%E5%92%8C%E5%BC%A6%EF%BC%8C%E7%AA%81%E7%A0%B4%E6%A8%AA%E6%8C%89%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 和弦构成与按法逻辑（新手快速记和弦，突破横按）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-1-%E6%A0%B8%E5%BF%83%E5%92%8C%E5%BC%A6%E6%9E%84%E6%88%90%E7%A4%BA%E4%BE%8B%EF%BC%88%E6%96%B0%E6%89%8B%E5%BF%85%E8%83%8C%EF%BC%89"><span class="toc-number">3.2.1.</span> <span class="toc-text">2.2.1 核心和弦构成示例（新手必背）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-2-%E6%A8%AA%E6%8C%89%E5%92%8C%E5%BC%A6%E6%8A%80%E5%B7%A7%EF%BC%88%E9%92%88%E5%AF%B9%E4%BD%A0%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84%E6%A8%AA%E6%8C%89%E7%BB%83%E4%B9%A0%EF%BC%89"><span class="toc-number">3.2.2.</span> <span class="toc-text">2.2.2 横按和弦技巧（针对你未完成的横按练习）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E5%92%8C%E5%BC%A6%E7%BC%96%E9%85%8D%EF%BC%88%E5%BC%B9%E5%94%B1%E6%97%B6%EF%BC%8C%E5%A6%82%E4%BD%95%E6%90%AD%E9%85%8D%E5%92%8C%E5%BC%A6%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 和弦编配（弹唱时，如何搭配和弦）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%90%89%E4%BB%96%E8%AF%86%E8%B0%B1%EF%BC%88%E7%9C%8B%E6%87%82%E5%85%AD%E7%BA%BF%E8%B0%B1%E3%80%81%E7%AE%80%E8%B0%B1%EF%BC%8C%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E5%BC%B9%E5%94%B1%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">第三章 吉他识谱（看懂六线谱、简谱，快速上手弹唱）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E5%85%AD%E7%BA%BF%E8%B0%B1%EF%BC%88%E5%90%89%E4%BB%96%E4%B8%93%E5%B1%9E%E8%B0%B1%EF%BC%8C%E9%87%8D%E7%82%B9%E7%9C%8B%E6%8C%87%E6%B3%95%EF%BC%89"><span class="toc-number">4.1.</span> <span class="toc-text">3.1 六线谱（吉他专属谱，重点看指法）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E7%AE%80%E8%B0%B1%EF%BC%88%E7%9C%8B%E6%97%8B%E5%BE%8B%E3%80%81%E8%8A%82%E5%A5%8F%EF%BC%8C%E9%80%82%E9%85%8D%E5%BC%B9%E5%94%B1%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">3.2 简谱（看旋律、节奏，适配弹唱）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E5%85%AD%E7%BA%BF%E8%B0%B1-%E7%AE%80%E8%B0%B1%E7%BB%93%E5%90%88%E5%AE%9E%E6%93%8D%EF%BC%88%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8%E7%A4%BA%E4%BE%8B%EF%BC%89"><span class="toc-number">4.3.</span> <span class="toc-text">3.3 六线谱+简谱结合实操（新手入门示例）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E8%BF%9B%E9%98%B6%E4%B9%90%E7%90%86%EF%BC%88%E9%80%82%E9%85%8D%E4%BD%A0%E7%9A%84%E8%BF%9B%E9%98%B6%E7%BB%83%E4%B9%A0%EF%BC%8C%E6%8F%90%E5%8D%87%E5%BC%B9%E5%94%B1%E8%B4%A8%E6%84%9F%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">第四章 进阶乐理（适配你的进阶练习，提升弹唱质感）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E8%BD%AC%E8%B0%83%E6%8A%80%E5%B7%A7%EF%BC%88%E5%BC%B9%E5%94%B1%E4%B8%8D%E5%90%8C%E8%B0%83%E5%BC%8F%E7%9A%84%E6%AD%8C%E6%9B%B2%EF%BC%89"><span class="toc-number">5.1.</span> <span class="toc-text">4.1 转调技巧（弹唱不同调式的歌曲）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E5%90%89%E4%BB%96%E7%BB%83%E8%80%B3%EF%BC%88%E6%8F%90%E5%8D%87%E9%9F%B3%E5%87%86%EF%BC%8C%E8%BE%85%E5%8A%A9%E5%BC%B9%E5%94%B1%E5%92%8C%E5%88%9B%E4%BD%9C%EF%BC%89"><span class="toc-number">5.2.</span> <span class="toc-text">4.2 吉他练耳（提升音准，辅助弹唱和创作）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E5%8D%B3%E5%85%B4%E5%BC%B9%E5%94%B1%E5%9F%BA%E7%A1%80%EF%BC%88%E7%BB%93%E5%90%88%E4%B9%90%E7%90%86%EF%BC%8C%E7%81%B5%E6%B4%BB%E5%BC%B9%E5%94%B1%EF%BC%89"><span class="toc-number">5.3.</span> <span class="toc-text">4.3 即兴弹唱基础（结合乐理，灵活弹唱）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%96%B0%E6%89%8B%E7%BB%83%E4%B9%A0%E8%AE%A1%E5%88%92%EF%BC%88%E8%B4%B4%E5%90%88%E4%BD%A0%E7%9A%84%E8%BF%9B%E5%BA%A6%EF%BC%8C%E9%AB%98%E6%95%88%E6%8F%90%E5%8D%87%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">第五章 新手练习计划（贴合你的进度，高效提升）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%EF%BC%881-7%E5%A4%A9%EF%BC%89%EF%BC%9A%E5%B7%A9%E5%9B%BA%E5%9F%BA%E7%A1%80%EF%BC%8C%E9%93%BA%E5%9E%AB%E6%A8%AA%E6%8C%89"><span class="toc-number">6.1.</span> <span class="toc-text">第一阶段（1-7天）：巩固基础，铺垫横按</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%EF%BC%888-14%E5%A4%A9%EF%BC%89%EF%BC%9A%E7%AA%81%E7%A0%B4%E6%A8%AA%E6%8C%89%EF%BC%8C%E8%A1%94%E6%8E%A5%E5%BC%B9%E5%94%B1"><span class="toc-number">6.2.</span> <span class="toc-text">第二阶段（8-14天）：突破横按，衔接弹唱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%EF%BC%8815-30%E5%A4%A9%EF%BC%89%EF%BC%9A%E8%BF%9B%E9%98%B6%E6%8F%90%E5%8D%87%EF%BC%8C%E7%81%B5%E6%B4%BB%E8%BF%90%E7%94%A8"><span class="toc-number">6.3.</span> <span class="toc-text">第三阶段（15-30天）：进阶提升，灵活运用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/22/%E5%90%89%E4%BB%96%E4%B9%90%E7%90%86%E6%95%99%E7%A8%8B/" title="吉他乐理教程">吉他乐理教程</a><time datetime="2026-05-22T12:51:14.000Z" title="发表于 2026-05-22 20:51:14">2026-05-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/04/03/Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="Python环境配置">Python环境配置</a><time datetime="2026-04-03T12:02:36.000Z" title="发表于 2026-04-03 20:02:36">2026-04-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/31/%E4%BA%BA%E9%97%B4%E5%85%B1%E9%B8%A3/" title="人间共鸣"><img src="/2026/03/31/%E4%BA%BA%E9%97%B4%E5%85%B1%E9%B8%A3/a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人间共鸣"/></a><div class="content"><a class="title" href="/2026/03/31/%E4%BA%BA%E9%97%B4%E5%85%B1%E9%B8%A3/" title="人间共鸣">人间共鸣</a><time datetime="2026-03-31T04:19:18.000Z" title="发表于 2026-03-31 12:19:18">2026-03-31</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/03/31/Spring%20Cloud%E5%85%A8%E8%A7%A3%E6%9E%90%EF%BC%9A%E4%BB%8E%E7%BB%84%E4%BB%B6%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E6%88%98%E8%90%BD%E5%9C%B0/" title="Spring Cloud全解析：从组件原理到实战落地">Spring Cloud全解析：从组件原理到实战落地</a><time datetime="2026-03-31T04:13:22.000Z" title="发表于 2026-03-31 12:13:22">2026-03-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/22/%E6%97%A0%E9%A2%98/" title="无题"><img src="/2026/03/22/%E6%97%A0%E9%A2%98/a.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2026/03/22/%E6%97%A0%E9%A2%98/" title="无题">无题</a><time datetime="2026-03-22T15:29:28.000Z" title="发表于 2026-03-22 23:29:28">2026-03-22</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-flex"><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">使用文档</div><div class="footer-flex-content"><a href="https://butterfly.js.org/posts/21cfbf15/" target="_blank" title="🚀 快速开始">🚀 快速开始</a><a href="https://butterfly.js.org/posts/dc584b87/" target="_blank" title="📑 主题页面">📑 主题页面</a><a href="https://butterfly.js.org/posts/4aa8abbe/" target="_blank" title="📌 主题配置">📌 主题配置</a><a href="https://butterfly.js.org/posts/ceeb73f/" target="_blank" title="⚔️ 标签外挂">⚔️ 标签外挂</a><a href="https://butterfly.js.org/posts/98d20436/" target="_blank" title="❓ 主题问答">❓ 主题问答</a><a href="https://butterfly.js.org/posts/4073eda/" target="_blank" title="⚡️ 进阶教程">⚡️ 进阶教程</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">其他</div><div class="footer-flex-content"><a href="/Gallery/" target="_blank" title="图库">图库</a><a href="/messageboard/" target="_blank" title="留言板">留言板</a><a href="/talking/" target="_blank" title="说说">说说</a><a href="/link/" target="_blank" title="友情链接">友情链接</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">框架</div><div class="footer-flex-content"><a href="https://hexo.io/zh-cn/" target="_blank" title="Hexo">Hexo</a><a href="https://butterfly.js.org/" target="_blank" title="Butterfly">Butterfly</a></div></div></div><div class="footer-flex-items"><div class="footer-flex-item"><div class="footer-flex-title">赞助</div><div class="footer-flex-content"><div><img src='/images/donate.jpg' alt='yfsun2' width='100px' height='100px'></div></div></div></div></div><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By yfsun2</span><span class="framework-info"><span class="footer-separator">|</span><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div><div class="footer_custom_text"><span id="realtime_duration"></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="/js/tw_cn.js?v=5.5.3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'yfsun2/yfsun2.github.io',
+      'data-repo-id': 'R_kgDOQrdD3Q',
+      'data-category-id': 'DIC_kwDOQrdD3c4C0jy_',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script><script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/duration.min.js"></script><script src="/scripts/realtime.js"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div id="algolia-search-input"><div class="ais-SearchBox"><form class="ais-SearchBox-form" action="" role="search" novalidate=""><input class="ais-SearchBox-input" type="search" placeholder="搜索文章" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="512" aria-label="Search"/><button class="ais-SearchBox-submit" type="submit" title="Submit the search query" style="display:none;"><svg class="ais-SearchBox-submitIcon" width="10" height="10" viewBox="0 0 40 40" aria-hidden="true"><path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"></path></svg></button></form></div><hr/><div id="algolia-search-results"><div id="algolia-hits"><div id="algolia-hits-empty" style="display:none;"></div><div class="ais-Hits" style="display:none;"><ol class="ais-Hits-list"></ol></div></div><div class="ais-Pagination" id="algolia-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="algolia-info"><span class="ais-Stats-text"></span><a class="algolia-poweredBy" href="https://www.algolia.com/?utm_source=algoliasearch.js&amp;utm_medium=website&amp;utm_content=localhost&amp;utm_campaign=poweredby" target="_blank" aria-label="Search by Algolia" rel="noopener noreferrer"><svg class="ais-PoweredBy-logo" height="1.2em" viewBox="0 0 572 64" style="width: auto;"><path fill="#36395A" d="M16 48.3c-3.4 0-6.3-.6-8.7-1.7A12.4 12.4 0 0 1 1.9 42C.6 40 0 38 0 35.4h6.5a6.7 6.7 0 0 0 3.9 6c1.4.7 3.3 1.1 5.6 1.1 2.2 0 4-.3 5.4-1a7 7 0 0 0 3-2.4 6 6 0 0 0 1-3.4c0-1.5-.6-2.8-1.9-3.7-1.3-1-3.3-1.6-5.9-1.8l-4-.4c-3.7-.3-6.6-1.4-8.8-3.4a10 10 0 0 1-3.3-7.9c0-2.4.6-4.6 1.8-6.4a12 12 0 0 1 5-4.3c2.2-1 4.7-1.6 7.5-1.6s5.5.5 7.6 1.6a12 12 0 0 1 5 4.4c1.2 1.8 1.8 4 1.8 6.7h-6.5a6.4 6.4 0 0 0-3.5-5.9c-1-.6-2.6-1-4.4-1s-3.2.3-4.4 1c-1.1.6-2 1.4-2.6 2.4-.5 1-.8 2-.8 3.1a5 5 0 0 0 1.5 3.6c1 1 2.6 1.7 4.7 1.9l4 .3c2.8.2 5.2.8 7.2 1.8 2.1 1 3.7 2.2 4.9 3.8a9.7 9.7 0 0 1 1.7 5.8c0 2.5-.7 4.7-2 6.6a13 13 0 0 1-5.6 4.4c-2.4 1-5.2 1.6-8.4 1.6Zm35.6 0c-2.6 0-4.8-.4-6.7-1.3a13 13 0 0 1-4.7-3.5 17.1 17.1 0 0 1-3.6-10.4v-1c0-2 .3-3.8 1-5.6a13 13 0 0 1 7.3-8.3 15 15 0 0 1 6.3-1.4A13.2 13.2 0 0 1 64 24.3c1 2.2 1.6 4.6 1.6 7.2V34H39.4v-4.3h21.8l-1.8 2.2c0-2-.3-3.7-.9-5.1a7.3 7.3 0 0 0-2.7-3.4c-1.2-.7-2.7-1.1-4.6-1.1s-3.4.4-4.7 1.3a8 8 0 0 0-2.9 3.6c-.6 1.5-.9 3.3-.9 5.4 0 2 .3 3.7 1 5.3a7.9 7.9 0 0 0 2.8 3.7c1.3.8 3 1.3 5 1.3s3.8-.5 5.1-1.3c1.3-1 2.1-2 2.4-3.2h6a11.8 11.8 0 0 1-7 8.7 16 16 0 0 1-6.4 1.2ZM80 48c-2.2 0-4-.3-5.7-1a8.4 8.4 0 0 1-3.7-3.3 9.7 9.7 0 0 1-1.3-5.2c0-2 .5-3.8 1.5-5.2a9 9 0 0 1 4.3-3.1c1.8-.7 4-1 6.7-1H89v4.1h-7.5c-2 0-3.4.5-4.4 1.4-1 1-1.6 2.1-1.6 3.6s.5 2.7 1.6 3.6c1 1 2.5 1.4 4.4 1.4 1.1 0 2.2-.2 3.2-.7 1-.4 1.9-1 2.6-2 .6-1 1-2.4 1-4.2l1.7 2.1c-.2 2-.7 3.8-1.5 5.2a9 9 0 0 1-3.4 3.3 12 12 0 0 1-5.3 1Zm9.5-.7v-8.8h-1v-10c0-1.8-.5-3.2-1.4-4.1-1-1-2.4-1.4-4.2-1.4a142.9 142.9 0 0 0-10.2.4v-5.6a74.8 74.8 0 0 1 8.6-.4c3 0 5.5.4 7.5 1.2s3.4 2 4.4 3.6c1 1.7 1.4 4 1.4 6.7v18.4h-5Zm12.9 0V17.8h5v12.3h-.2c0-4.2 1-7.4 2.8-9.5a11 11 0 0 1 8.3-3.1h1v5.6h-2a9 9 0 0 0-6.3 2.2c-1.5 1.5-2.2 3.6-2.2 6.4v15.6h-6.4Zm34.4 1a15 15 0 0 1-6.6-1.3c-1.9-.9-3.4-2-4.7-3.5a15.5 15.5 0 0 1-2.7-5c-.6-1.7-1-3.6-1-5.4v-1c0-2 .4-3.8 1-5.6a15 15 0 0 1 2.8-4.9c1.3-1.5 2.8-2.6 4.6-3.5a16.4 16.4 0 0 1 13.3.2c2 1 3.5 2.3 4.8 4a12 12 0 0 1 2 6H144c-.2-1.6-1-3-2.2-4.1a7.5 7.5 0 0 0-5.2-1.7 8 8 0 0 0-4.7 1.3 8 8 0 0 0-2.8 3.6 13.8 13.8 0 0 0 0 10.3c.6 1.5 1.5 2.7 2.8 3.6s2.8 1.3 4.8 1.3c1.5 0 2.7-.2 3.8-.8a7 7 0 0 0 2.6-2c.7-1 1-2 1.2-3.2h6.2a11 11 0 0 1-2 6.2 15.1 15.1 0 0 1-11.8 5.5Zm19.7-1v-40h6.4V31h-1.3c0-3 .4-5.5 1.1-7.6a9.7 9.7 0 0 1 3.5-4.8A9.9 9.9 0 0 1 172 17h.3c3.5 0 6 1.1 7.9 3.5 1.7 2.3 2.6 5.7 2.6 10v16.8h-6.4V29.6c0-2.1-.6-3.8-1.8-5a6.4 6.4 0 0 0-4.8-1.8c-2 0-3.7.7-5 2a7.8 7.8 0 0 0-1.9 5.5v17h-6.4Zm63.8 1a12.2 12.2 0 0 1-10.9-6.2 19 19 0 0 1-1.8-7.3h1.4v12.5h-5.1v-40h6.4v19.8l-2 3.5c.2-3.1.8-5.7 1.9-7.7a11 11 0 0 1 4.4-4.5c1.8-1 3.9-1.5 6.1-1.5a13.4 13.4 0 0 1 12.8 9.1c.7 1.9 1 3.8 1 6v1c0 2.2-.3 4.1-1 6a13.6 13.6 0 0 1-13.2 9.4Zm-1.2-5.5a8.4 8.4 0 0 0 7.9-5c.7-1.5 1.1-3.3 1.1-5.3s-.4-3.8-1.1-5.3a8.7 8.7 0 0 0-3.2-3.6 9.6 9.6 0 0 0-9.2-.2 8.5 8.5 0 0 0-3.3 3.2c-.8 1.4-1.3 3-1.3 5v2.3a9 9 0 0 0 1.3 4.8 9 9 0 0 0 3.4 3c1.4.7 2.8 1 4.4 1Zm27.3 3.9-10-28.9h6.5l9.5 28.9h-6Zm-7.5 12.2v-5.7h4.9c1 0 2-.1 2.9-.4a4 4 0 0 0 2-1.4c.4-.7.9-1.6 1.2-2.7l8.6-30.9h6.2l-9.3 32.4a14 14 0 0 1-2.5 5 8.9 8.9 0 0 1-4 2.8c-1.5.6-3.4.9-5.6.9h-4.4Zm9-12.2v-5.2h6.4v5.2H248Z"></path><path fill="#003DFF" d="M534.4 9.1H528a.8.8 0 0 1-.7-.7V1.8c0-.4.2-.7.6-.8l6.5-1c.4 0 .8.2.9.6v7.8c0 .4-.4.7-.8.7zM428 35.2V.8c0-.5-.3-.8-.7-.8h-.2l-6.4 1c-.4 0-.7.4-.7.8v35c0 1.6 0 11.8 12.3 12.2.5 0 .8-.4.8-.8V43c0-.4-.3-.7-.6-.8-4.5-.5-4.5-6-4.5-7zm106.5-21.8H528c-.4 0-.7.4-.7.8v34c0 .4.3.8.7.8h6.5c.4 0 .8-.4.8-.8v-34c0-.5-.4-.8-.8-.8zm-17.7 21.8V.8c0-.5-.3-.8-.8-.8l-6.5 1c-.4 0-.7.4-.7.8v35c0 1.6 0 11.8 12.3 12.2.4 0 .8-.4.8-.8V43c0-.4-.3-.7-.7-.8-4.4-.5-4.4-6-4.4-7zm-22.2-20.6a16.5 16.5 0 0 1 8.6 9.3c.8 2.2 1.3 4.8 1.3 7.5a19.4 19.4 0 0 1-4.6 12.6 14.8 14.8 0 0 1-5.2 3.6c-2 .9-5.2 1.4-6.8 1.4a21 21 0 0 1-6.7-1.4 15.4 15.4 0 0 1-8.6-9.3 21.3 21.3 0 0 1 0-14.4 15.2 15.2 0 0 1 8.6-9.3c2-.8 4.3-1.2 6.7-1.2s4.6.4 6.7 1.2zm-6.7 27.6c2.7 0 4.7-1 6.2-3s2.2-4.3 2.2-7.8-.7-6.3-2.2-8.3-3.5-3-6.2-3-4.7 1-6.1 3c-1.5 2-2.2 4.8-2.2 8.3s.7 5.8 2.2 7.8 3.5 3 6.2 3zm-88.8-28.8c-6.2 0-11.7 3.3-14.8 8.2a18.6 18.6 0 0 0 4.8 25.2c1.8 1.2 4 1.8 6.2 1.7s.1 0 .1 0h.9c4.2-.7 8-4 9.1-8.1v7.4c0 .4.3.7.8.7h6.4a.7.7 0 0 0 .7-.7V14.2c0-.5-.3-.8-.7-.8h-13.5zm6.3 26.5a9.8 9.8 0 0 1-5.7 2h-.5a10 10 0 0 1-9.2-14c1.4-3.7 5-6.3 9-6.3h6.4v18.3zm152.3-26.5h13.5c.5 0 .8.3.8.7v33.7c0 .4-.3.7-.8.7h-6.4a.7.7 0 0 1-.8-.7v-7.4c-1.2 4-4.8 7.4-9 8h-.1a4.2 4.2 0 0 1-.5.1h-.9a10.3 10.3 0 0 1-7-2.6c-4-3.3-6.5-8.4-6.5-14.2 0-3.7 1-7.2 3-10 3-5 8.5-8.3 14.7-8.3zm.6 28.4c2.2-.1 4.2-.6 5.7-2V21.7h-6.3a9.8 9.8 0 0 0-9 6.4 10.2 10.2 0 0 0 9.1 13.9h.5zM452.8 13.4c-6.2 0-11.7 3.3-14.8 8.2a18.5 18.5 0 0 0 3.6 24.3 10.4 10.4 0 0 0 13 .6c2.2-1.5 3.8-3.7 4.5-6.1v7.8c0 2.8-.8 5-2.2 6.3-1.5 1.5-4 2.2-7.5 2.2l-6-.3c-.3 0-.7.2-.8.5l-1.6 5.5c-.1.4.1.8.5 1h.1c2.8.4 5.5.6 7 .6 6.3 0 11-1.4 14-4.1 2.7-2.5 4.2-6.3 4.5-11.4V14.2c0-.5-.4-.8-.8-.8h-13.5zm6.3 8.2v18.3a9.6 9.6 0 0 1-5.6 2h-1a10.3 10.3 0 0 1-8.8-14c1.4-3.7 5-6.3 9-6.3h6.4zM291 31.5A32 32 0 0 1 322.8 0h30.8c.6 0 1.2.5 1.2 1.2v61.5c0 1.1-1.3 1.7-2.2 1l-19.2-17a18 18 0 0 1-11 3.4 18.1 18.1 0 1 1 18.2-14.8c-.1.4-.5.7-.9.6-.1 0-.3 0-.4-.2l-3.8-3.4c-.4-.3-.6-.8-.7-1.4a12 12 0 1 0-2.4 8.3c.4-.4 1-.5 1.6-.2l14.7 13.1v-46H323a26 26 0 1 0 10 49.7c.8-.4 1.6-.2 2.3.3l3 2.7c.3.2.3.7 0 1l-.2.2a32 32 0 0 1-47.2-28.6z"></path></svg></a></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch@5.46.0/dist/lite/builds/browser.umd.min.js"></script><script src="/js/search/algolia.js?v=5.5.3"></script></div></div></body></html>
